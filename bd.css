@@ -17,6 +17,7 @@ img {
     display: block;
     margin: 0 auto;
     padding-top: 30%;
+    transform: scale(0.8);
     transition: 0.3s ease;
 }
 
@@ -32,10 +33,10 @@ img {
     background-repeat: repeat-y;
 }
 .column:hover h1{
-    transform: scale(1.15);
+    transform: scale(1.2);
 }
 .column:hover img{
-    transform: scale(1.15);
+    transform: scale(1.0);
 }
 /* diff color transition for each column */
 #col1 {
