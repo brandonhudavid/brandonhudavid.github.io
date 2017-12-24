@@ -1,0 +1,78 @@
+h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 36pt;
+    text-align: center;
+    color: black;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18pt;
+    text-align: center;
+    color: black;
+}
+
+body {
+    background-image: url("bd_bg-white.png");
+    background-color: #cccccc;
+}
+
+
+#myTopnav{
+    display: table;
+    margin: 0 auto;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 10px 100px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Muli', sans-serif;
+    position: relative;
+}
+
+.topnav a:after {    
+    bottom: 0;
+    content: "";
+    height: 5px;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+}
+
+.topnav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #000000;
+    color: white;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+div {
+    
+}
