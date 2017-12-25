@@ -224,6 +224,7 @@ img {
 */
     position: absolute;
     margin: auto;
+    opacity: 0;
     top: 0;
     left: 0;
     right: 0;
