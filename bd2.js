@@ -1,3 +1,8 @@
+window.addEventListener("load", function()
+{
+    document.getElementById("loadtext").classList.add("fadein");
+})
+
 function shift(){
     document.getElementById("overlay").classList.add("slideOut")
     document.getElementById("col1").classList.add("col1slide")
