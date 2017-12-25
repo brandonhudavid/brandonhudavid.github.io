@@ -1,54 +1,77 @@
+#container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-image: url(bd_bg-black.png); 
+    background-size: cover;
+}
+
 h1 {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
     font-size: 28pt;
-    text-align: center;
-    color: #000000;
+    color: #ffffff;
     transition: 0.3s ease;
+    text-align: center;
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 28pt;
-    text-align: center;
-    color: #000000;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
     transition: 0.3s ease;
 }
 
-.fadeout {
-    opacity: 0;
+/*
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 18pt;
+    text-align: center;
+    color: black;
+}
+*/
+
+img {
+    display: block;
+    margin: auto;
+    transition: 0.3s ease;
 }
 
-@keyframes fadeaway {
+#overlay {
+    z-index: 9999;
+    width:100vw;
+    height:100vh;
+    background:rgba(0, 0, 0, 1);
+    position:absolute;
+    display:block;
+    left: 0;
+    top: 0;
+}
+
+/* overlay slideOut animation */
+.slideOut {
+    animation: 1.5s ease slidedown;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slidedown {
   0% {
-    opacity: 1
-  }
-  100% {
-    opacity: 0
-  }
-}
-
-@keyframes fadeopacity {
-    0% {
-        opacity: 0
+      transform: translateY(0);
     }
-    100% {
-        opacity: 1
+  100% {
+      transform: translateY(100%);
     }
 }
 
 #overlay h1 {
     position: absolute;
-/*
-    padding-left: 6pt;
-    border-left: 5px solid white;
-*/
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 18pt;
     top: 9vh;
     left: 6vw;
     text-align: left;
-    color: #ffffff;
 }
 
 #overlay h2 {
@@ -57,7 +80,6 @@ h2 {
     border-left: 5px solid white;
     font-family: 'Lato', sans-serif;
     font-size: 13pt;
-    color: #ffffff;
     top: 14vh;
     left: 6vw;
     text-align: left;
@@ -66,6 +88,7 @@ h2 {
 #loadtext {
     position: absolute;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
     font-size: 24pt;
     color: #ffffff;
     top:82vh;
@@ -76,90 +99,67 @@ h2 {
     animation-fill-mode: forwards;
 }
 
+#bgimg {
+    position: absolute;
+    margin: auto;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 15vh;
+    width: 15vh;
+    animation-fill-mode: forwards;
+    vertical-align: "center";
+}
+
+#spinner {
+    width: 23vh;
+    height: 23vh;
+    border-top: 5px solid #ffffff;
+    border-radius: 100%;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: spin 1.5s infinite linear;
+    transition: 1.5s ease;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+
 .fadein {
-    animation: 1.5s ease fadeopacity;
+    animation: 1.5s ease opaque;
+}
+
+@keyframes opaque {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.fadeout {
+    opacity: 0;
 }
 
 
-p {
-    font-family: 'Lato', sans-serif;
-    font-size: 18pt;
-    text-align: center;
-    color: black;
-}
-
-img {
-    display: block;
-    margin: 0 auto;
-    transform: scale(0.8);
-    transition: 0.3s ease;
-}
-
-/* columns slide in */
-.wrapper {
-    -webkit-transition-duration: 500ms;
-    transition-duration: 500ms;
-}
-
-.wrapper.loading:nth-child(odd) {
-    -webkit-transform: translate(0, 500px)
-    transform: translate(0, 500px)
-}
-
-.wrapper.loading:nth-child(even) {
-    -webkit-transform: translate(0, -500px)
-    transform: translate(0, -500px)
-}
-
-/* rules for columns */
-
-.column-img {
-    padding-top: 30%;
-}
-
-.column {
-    float: left;
-    width: 33%;
-    height:100vh;
-    display: block;
-    background-image: url("bd_bg-alpha.png");
-    background-size:contain;
-    background-repeat: repeat-y;
-}
-
-.column:hover h1{
-    transform: scale(1.2);
-}
-.column:hover img{
-    transform: scale(1.0);
-}
-/* diff color transition for each column */
-#col1 {
-    transition: background-color 0.3s ease;
-    background-color: #ffcf8c;
-}
-#col1:hover {
-    transition: background-color 0.3s ease;
-    background-color: #ffc573;
-}
-#col2 {
-    transition: background-color 0.3s ease;
-    background-color: #ff9a8c;
-}
-#col2:hover {
-    transition: background-color 0.3s ease;
-    background-color: #ff8373;
-}
-#col3 {
-    transition: background-color 0.3s ease;
-    background-color: #8cd1ff;
-}
-#col3:hover {
-    transition: background-color 0.3s ease;
-    background-color: #73c7ff;
-}
+/* columns slide in animation */
 
 .col1slide {
+    
     animation: 1.5s ease slideInFromTop;
 }
 
@@ -189,76 +189,55 @@ img {
   }
 }
 
-
-#spinner{
-    width: 23vh;
-    height: 23vh;
-    border-top: 5px solid #ffffff;
-    border-radius: 100%;
-    
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    animation: spin 1.5s infinite linear;
-    transition: 1.5s ease;
-    
-}
-
-#overlay {
-    z-index: 9999;
-    width:100vw;
+/* rules for columns */
+.column {
+    float: left;
+    width: 33%;
     height:100vh;
-    background:rgba(0, 0, 0, 1);
-    position:absolute;
-    display:block;
-    left: 0;
-    top: 0;
+    display: block;
+    background-image: url("bd_bg-alpha.png");
+    background-size:contain;
+    background-repeat: repeat-y;
 }
 
-#bgimg {
-/*
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-*/
-    position: absolute;
-    margin: auto;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    animation-fill-mode: forwards;
-
+.column-img {
+    padding-top: 30%;
+    width: 30vw;
+    height: 30vw;
+    transform: scale(0.8);
 }
 
-.slideOut {
-    animation: 1.5s ease slidedown;
-    animation-fill-mode: forwards;
+/* increase column elements size on hover */
+.column:hover h1{
+    transform: scale(1.2);
 }
 
-@keyframes slidedown {
-  0% {
-      transform: translateY(0);
-    }
-  100% {
-      transform: translateY(100%);
-    }
+.column:hover img{
+    transform: scale(1.0);
 }
 
-
-@keyframes spin {
-    from{
-        transform: rotate(0deg);
-    }to{
-        transform: rotate(360deg);
-    }
+/* change column color on hover */
+#col1 {
+    transition: background-color 0.3s ease;
+    background-color: #ffcf8c;
 }
-
-
-
+#col1:hover {
+    transition: background-color 0.3s ease;
+    background-color: #ffc573;
+}
+#col2 {
+    transition: background-color 0.3s ease;
+    background-color: #ff9a8c;
+}
+#col2:hover {
+    transition: background-color 0.3s ease;
+    background-color: #ff8373;
+}
+#col3 {
+    transition: background-color 0.3s ease;
+    background-color: #8cd1ff;
+}
+#col3:hover {
+    transition: background-color 0.3s ease;
+    background-color: #73c7ff;
+}

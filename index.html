@@ -5,46 +5,31 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300|Montserrat:600,800" rel="stylesheet">
 </head>
 <body>
-    <div style="width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; overflow: hidden; background-image: url(bd_bg-black.png); background-size: cover;">
-    <script type="text/javascript" src="bd2.js"></script>
-    <div id="overlay">
-        <img id="bgimg" src="bd_logo.png" alt="load" width="150vw"; height="150vh" align="middle" vertical-align="center";>
-        <h1>BRANDON DAVID</h1>
-        <h2>Designer and Developer<br>
-            UC Berkeley Class of 2021<br>
-            Electrical Engineering&nbsp; & &nbsp;Computer Science
-        </h2>
-        <div id="loadtext">CLICK TO ENTER</div>
-        <div id="spinner"></div>
-    </div>
-        <div class="wrapper loading">
+    <div id="container">
+        <script type="text/javascript" src="bd2.js"></script>
+        <div id="overlay">
+            <img id="bgimg" src="bd_logo.png" alt="load";>
+            <h1>BRANDON DAVID</h1>
+            <h2>Designer and Developer<br>
+                UC Berkeley Class of 2021<br>
+                Electrical Engineering&nbsp; & &nbsp;Computer Science
+            </h2>
+            <div id="loadtext">CLICK TO ENTER</div>
+            <div id="spinner"></div>
+        </div>
             <div class="column" id="col1">
-                <img class="column-img" src="about.png" alt="about" width=450px height=450px>
+                <img class="column-img" src="about.png" alt="about">
                 <h1 style="color: #5a3501">ABOUT</h1>
             </div>
-        </div>
-        <div class="wrapper loading">
             <div class="column" id="col2" style="width: 34%;">
-                <img class="column-img" src="portfolio.png" alt="about" width=450px height=450px>
+                <img class="column-img" src="portfolio.png" alt="about">
                 <h1 style="color: #5a010e">PORTFOLIO</h1>
             </div>
-        </div>
-        <div class="wrapper loading">
             <div class="column" id="col3">
-                <img class="column-img" src="contact.png" alt="about" width=450px height=450px>
+                <img class="column-img" src="contact.png" alt="about">
                 <h1 style="color: #012f5a">CONTACT</h1>
             </div>
-        </div>
-        <br style="clear: left;" />
+            <br style="clear: left;" />
     </div>
-<!--
-//        function shift(){
-//            document.getElementById("overlay").classList.add("slideOut")
-//            document.getElementById("col1").classList.add("col1slide")
-//            document.getElementById("col2").classList.add("col2slide")
-//            document.getElementById("col3").classList.add("col3slide");
-//        }
--->
-
 </body>
 </html>
