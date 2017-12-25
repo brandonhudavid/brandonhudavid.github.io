@@ -154,6 +154,7 @@ img {
     height:100vh;
     background-image: url(bd_load.png);
     background-size:cover;
+    background-position: center;
     position:absolute;
     display:block;
     left: 0;
