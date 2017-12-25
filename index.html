@@ -5,24 +5,40 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300|Montserrat:800" rel="stylesheet">
 </head>
 <body>
-    <div id="overlay">
-        <div class="spinner"></div> 
+    <div style="width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; overflow-y:visible; background-image: url(bd_bg-black.png); background-size: contain; background-repeat: repeat">
+    <div id="overlay" onclick="shift()">
+        <h1 style="color: #ffffff;">CLICK TO ENTER</h1>
+        <div class="spinner"></div>
     </div>
-    <div style="width: 100%;">
-        <div class="column" id="col1">
-            <img src="about.png" alt="about" width=450px height=450px>
-            <h1 style="color: #5a3501">ABOUT</h1>
+        <div class="wrapper loading">
+            <div class="column" id="col1">
+                <img src="about.png" alt="about" width=450px height=450px>
+                <h1 style="color: #5a3501">ABOUT</h1>
+            </div>
         </div>
-        <div class="column" id="col2" style="width: 34%;">
-            <img src="portfolio.png" alt="about" width=450px height=450px>
-            <h1 style="color: #5a010e">PORTFOLIO</h1>
+        <div class="wrapper loading">
+            <div class="column" id="col2" style="width: 34%;">
+                <img src="portfolio.png" alt="about" width=450px height=450px>
+                <h1 style="color: #5a010e">PORTFOLIO</h1>
+            </div>
         </div>
-        <div class="column" id="col3">
-            <img src="contact.png" alt="about" width=450px height=450px>
-            <h1 style="color: #012f5a">CONTACT</h1>
+        <div class="wrapper loading">
+            <div class="column" id="col3">
+                <img src="contact.png" alt="about" width=450px height=450px>
+                <h1 style="color: #012f5a">CONTACT</h1>
+            </div>
         </div>
         <br style="clear: left;" />
     </div>
-    <script src="bd.js"></script>
+    <script type="text/javascript" src="bd2.js"></script>
+<!--
+//        function shift(){
+//            document.getElementById("overlay").classList.add("slideOut")
+//            document.getElementById("col1").classList.add("col1slide")
+//            document.getElementById("col2").classList.add("col2slide")
+//            document.getElementById("col3").classList.add("col3slide");
+//        }
+-->
+
 </body>
 </html>

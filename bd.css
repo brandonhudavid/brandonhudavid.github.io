@@ -6,6 +6,24 @@ h1 {
     transition: 0.3s ease;
 }
 
+@keyframes fadetext {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+#overlay h1 {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    top: 65vh;
+    left: 0;
+    right: 0;
+    animation: 2s ease fadetext;
+}
+
 p {
     font-family: 'Lato', sans-serif;
     font-size: 18pt;
@@ -21,17 +39,34 @@ img {
     transition: 0.3s ease;
 }
 
+/* columns slide in */
+.wrapper {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.wrapper.loading:nth-child(odd) {
+    -webkit-transform: translate(0, 500px)
+    transform: translate(0, 500px)
+}
+
+.wrapper.loading:nth-child(even) {
+    -webkit-transform: translate(0, -500px)
+    transform: translate(0, -500px)
+}
 
 /* rules for columns */
+
 .column {
     float: left;
     width: 33%;
     height:100vh;
-    overflow: hidden;
+    display: block;
     background-image: url("bd_bg-alpha.png");
     background-size:contain;
     background-repeat: repeat-y;
 }
+
 .column:hover h1{
     transform: scale(1.2);
 }
@@ -64,7 +99,38 @@ img {
     background-color: #73c7ff;
 }
 
-/* spinner */
+.col1slide {
+    animation: 1.5s ease slideInFromTop;
+}
+
+.col2slide {
+    animation: 1.75s ease slideInFromBottom;
+}
+
+.col3slide {
+    animation: 2s ease slideInFromTop;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
 .spinner{
     width: 200px;
     height: 200px;
@@ -83,16 +149,37 @@ img {
 }
 
 #overlay {
-    width:100%;
-    height:100%;
+    z-index: 1;
+    width:100vw;
+    height:100vh;
     background-image: url(bd_load.png);
     background-size:cover;
-    position: absolute;
+    position:absolute;
     display:block;
     left: 0;
     top: 0;
-    transition: 2s ease;
 }
+
+.slideOut {
+    animation: 3s ease slidedown;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slidedown {
+  0% {
+    transform: translateY(0);
+      opacity: 1;
+  }
+  75% {
+    transform: translateY(100%);
+      opacity: 0;
+  }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
 
 @keyframes spin {
     from{
@@ -101,4 +188,6 @@ img {
         transform: rotate(360deg);
     }
 }
+
+
 
