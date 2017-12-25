@@ -1,6 +1,7 @@
 window.addEventListener("load", function()
 {
-    document.getElementById("loadtext").classList.add("fadein");
+    document.getElementById("loadtext").classList.add("fadein")
+    document.getElementById("bgimg").classList.add("fadein");
 })
 
 function shift(){

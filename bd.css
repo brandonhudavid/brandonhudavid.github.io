@@ -6,6 +6,14 @@ h1 {
     transition: 0.3s ease;
 }
 
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28pt;
+    text-align: center;
+    color: #000000;
+    transition: 0.3s ease;
+}
+
 @keyframes fadetextout {
   0% {
     opacity: 1
@@ -15,7 +23,7 @@ h1 {
   }
 }
 
-@keyframes fadetextin {
+@keyframes fadeopacity {
     0% {
         opacity: 0
     }
@@ -26,10 +34,22 @@ h1 {
 
 #overlay h1 {
     position: absolute;
-    font-family: 'Lato', sans-serif;
-    font-size: 20pt;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22pt;
     color: #ffffff;
     top: 65vh;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+#overlay h2 {
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    font-size: 17pt;
+    color: #ffffff;
+    top: 71vh;
     left: 0;
     right: 0;
     text-align: center;
@@ -38,9 +58,9 @@ h1 {
 #loadtext {
     position: absolute;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20pt;
+    font-size: 24pt;
     color: #ffffff;
-    top:85vh;
+    top:88vh;
     left: 0;
     right: 0;
     text-align: center;
@@ -49,8 +69,9 @@ h1 {
 }
 
 .fadein {
-    animation: 1s ease fadetextin;
+    animation: 1s ease fadeopacity;
 }
+
 
 p {
     font-family: 'Lato', sans-serif;
@@ -180,13 +201,23 @@ img {
     z-index: 9999;
     width:100vw;
     height:100vh;
-    background-image: url(bd_load.png);
-    background-size:cover;
-    background-position: center;
+    background:rgba(0, 0, 0, 1);
     position:absolute;
     display:block;
     left: 0;
     top: 0;
+}
+
+#bgimg {
+    position: absolute;
+    top: -47vh;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
 }
 
 .slideOut {
