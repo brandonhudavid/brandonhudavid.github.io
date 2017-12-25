@@ -87,7 +87,6 @@ p {
 img {
     display: block;
     margin: 0 auto;
-    padding-top: 30%;
     transform: scale(0.8);
     transition: 0.3s ease;
 }
@@ -109,6 +108,10 @@ img {
 }
 
 /* rules for columns */
+
+.column-img {
+    padding-top: 30%;
+}
 
 .column {
     float: left;
@@ -219,10 +222,12 @@ img {
     left: 0;
     right: 0;
 */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     animation-fill-mode: forwards;
 
 }
