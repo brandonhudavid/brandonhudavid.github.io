@@ -12,7 +12,6 @@
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size: 3vw;
     color: #ffffff;
     transition: 0.3s ease;
     text-align: center;
@@ -298,6 +297,7 @@ img {
 }
 
 .column h1 {
+    font-size: 2.75vw;
     text-align: center;
 }
 
