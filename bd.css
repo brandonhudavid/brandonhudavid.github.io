@@ -291,10 +291,10 @@ img {
 }
 
 .column img {
-    padding-top: 25vh;
-    width: 30vw;
-    height: 30vw;
-    transform: scale(0.8);
+    padding-top: 20vh;
+    width: 28vw;
+    height: 28vw;
+    transform: scale(0.85);
 }
 
 .column h1 {
