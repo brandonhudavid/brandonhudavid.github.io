@@ -13,32 +13,40 @@ function shift(){
     document.getElementById("col3").classList.add("col3slide");
 }
 
-function select1(){
+function select(elem){
     document.getElementById("col1").onclick = function(){return false;}
     document.getElementById("col2").onclick = function(){return false;}
     document.getElementById("col3").onclick = function(){return false;}
-    document.getElementById("col1").classList.add("slideIn")
-    document.getElementById("col2").classList.add("slideLeft2")
-    document.getElementById("col3").classList.add("slideLeft")
-    document.getElementById("nav").classList.add("slideNav");
-}
-
-function select2(){
-    document.getElementById("col1").onclick = function(){return false;}
-    document.getElementById("col2").onclick = function(){return false;}
-    document.getElementById("col3").onclick = function(){return false;}
-    document.getElementById("col1").classList.add("slideLeft")
-    document.getElementById("col2").classList.add("slideIn2")
-    document.getElementById("col3").classList.add("slideLeft")
-    document.getElementById("nav").classList.add("slideNav");
-}
-
-function select3(){
-    document.getElementById("col1").onclick = function(){return false;}
-    document.getElementById("col2").onclick = function(){return false;}
-    document.getElementById("col3").onclick = function(){return false;}
-    document.getElementById("col1").classList.add("slideLeft")
-    document.getElementById("col2").classList.add("slideLeft2")
-    document.getElementById("col3").classList.add("slideIn")
-    document.getElementById("nav").classList.add("slideNav");
+    document.getElementById("nav").classList.add("slideNav")
+    if (elem.id == "col1" || elem.id == "nav1") {
+        document.getElementById("nav1").classList.add("nav1color")
+        document.getElementById("nav2").classList.remove("nav2color")
+        document.getElementById("nav3").classList.remove("nav3color")
+        document.getElementById("col1").style.left = 0+"vw"
+        document.getElementById("col1").style.transition = "left 2s ease, background-color 0.3s ease"
+        document.getElementById("col2").style.left = -34+"vw"
+        document.getElementById("col2").style.transition = "left 2s ease, background-color 0.3s ease"
+        document.getElementById("col3").style.left = -33+"vw";
+        document.getElementById("col3").style.transition = "left 2s ease, background-color 0.3s ease"
+    } else if (elem.id == "col2" || elem.id == "nav2") {
+        document.getElementById("nav1").classList.remove("nav1color")
+        document.getElementById("nav2").classList.add("nav2color")
+        document.getElementById("nav3").classList.remove("nav3color")
+        document.getElementById("col1").style.left = -33+"vw"
+        document.getElementById("col1").style.transition = "left 2s ease, background-color 0.3s ease"
+        document.getElementById("col2").style.left = -1+"vw"
+        document.getElementById("col2").style.transition = "left 2s ease, background-color 0.3s ease"
+        document.getElementById("col3").style.left = -33+"vw";
+        document.getElementById("col3").style.transition = "left 2s ease, background-color 0.3s ease"
+    } else {
+        document.getElementById("nav1").classList.remove("nav1color")
+        document.getElementById("nav2").classList.remove("nav2color")
+        document.getElementById("nav3").classList.add("nav3color")
+        document.getElementById("col1").style.left = -33+"vw"
+        document.getElementById("col1").style.transition = "left 2s ease, background-color 0.3s ease"
+        document.getElementById("col2").style.left = -34+"vw"
+        document.getElementById("col2").style.transition = "left 2s ease, background-color 0.3s ease"
+        document.getElementById("col3").style.left = 0+"vw";
+        document.getElementById("col3").style.transition = "left 2s ease, background-color 0.3s ease"
+    }
 }

@@ -23,8 +23,8 @@ h2 {
     transition: 0.3s ease;
 }
 
-#nav {  
-    background: rgba(0, 0, 0, 0.8);
+#nav { 
+    background-color: rgba(0, 0, 0, 0.8);
     display: inline;
     width: 35vw;
     height: 3.5vw;
@@ -33,6 +33,33 @@ h2 {
     top: -3.5vw;
     left: -2vw;
     animation-fill-mode: forwards;
+}
+
+#nav1 {
+    animation-fill-mode: forwards;
+    transition: background-color 0.5s ease;
+}
+
+.nav1color {
+    background-color: #ffc573;
+}
+
+#nav2 {
+    animation-fill-mode: forwards;
+    transition: background-color 0.5s ease;
+}
+
+.nav2color {
+    background-color: #ff8373;
+}
+
+#nav3 {
+    animation-fill-mode: forwards;
+    transition: background-color 0.5s ease;
+}
+
+.nav3color {
+    background-color: #73c7ff;
 }
 
 .slideNav {
@@ -45,17 +72,23 @@ h2 {
     }
 }
 
-#nav h1 {
+.navtext {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
+    transition: 0.3s ease;
+    text-align: center;
     position: relative;
     font-size: 1.4vw;
     float: right;
-    text-align: center;
+    padding-top: 0.9vw;
     padding-bottom: 0.9vw;
     padding-left: 2.1vw;
     padding-right: 2.1vw;
 }
 
-#nav h1:after {   
+
+.navtext:after {   
     position: absolute;
     bottom: 0;
     content: "";
@@ -66,7 +99,7 @@ h2 {
     width: 0;
 }
 
-#nav h1:hover:after { 
+.navtext:hover:after { 
     width: 100%; 
     left: 0; 
 }
@@ -219,20 +252,14 @@ img {
 }
 
 @keyframes slideInFromTop {
-  0% {
-    transform: translateY(-100%);
-  }
   100% {
-    transform: translateY(0);
+    top: 0;
   }
 }
 
 @keyframes slideInFromBottom {
-  0% {
-    transform: translateY(100%);
-  }
   100% {
-    transform: translateY(0);
+    top: 0;
   }
 }
 
@@ -314,6 +341,7 @@ img {
 #col1 {
     z-index: 3;
     width: 33%;
+    top: -100vh;
     left: 0vw;
     transition: background-color 0.3s ease;
     background-color: #ffcf8c;
@@ -326,6 +354,7 @@ img {
 #col2 {
     z-index: 2;
     width: 34%;
+    top: 100vh;
     left: 33vw;
     transition: background-color 0.3s ease;
     background-color: #ff9a8c;
@@ -338,6 +367,7 @@ img {
 #col3 {
     z-index: 1;
     width: 33%;
+    top: -100vh;
     left: 67vw;
     transition: background-color 0.3s ease;
     background-color: #8cd1ff;
