@@ -12,7 +12,7 @@
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size: 28pt;
+    font-size: 3vw;
     color: #ffffff;
     transition: 0.3s ease;
     text-align: center;
@@ -23,6 +23,54 @@ h2 {
     color: #ffffff;
     transition: 0.3s ease;
 }
+
+#nav {  
+    background: rgba(0, 0, 0, 0.8);
+    width: 33vw;
+    height: 3.5vw;
+    z-index: 4;
+    position: absolute;
+    top: -3.5vw;
+    left: 0;
+    animation-fill-mode: forwards;
+}
+
+.slideNav {
+    animation: 2s ease-out navSlide;
+}
+
+@keyframes navSlide {
+    100% {
+        top: 0;
+    }
+}
+
+#nav h1 {
+    position: relative;
+    font-size: 1.4vw;
+    float: left;
+    text-align: center;
+    padding-bottom: 0.9vw;
+    padding-left: 2.1vw;
+    padding-right: 2.1vw;
+}
+
+#nav h1:after {   
+    position: absolute;
+    bottom: 0;
+    content: "";
+    height: 0.35vw;
+    left: 50%;
+    background: #ffffff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+#nav h1:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
 
 /*
 p {
@@ -51,12 +99,12 @@ img {
 }
 
 /* overlay slideOut animation */
-.slideOut {
-    animation: 1.5s ease slidedown;
+.slideDown {
+    animation: 1.5s ease downSlide;
     animation-fill-mode: forwards;
 }
 
-@keyframes slidedown {
+@keyframes downSlide {
   0% {
       transform: translateY(0);
     }
@@ -68,7 +116,7 @@ img {
 #overlay h1 {
     position: absolute;
     font-weight: 600;
-    font-size: 18pt;
+    font-size: 2vw;
     top: 9vh;
     left: 6vw;
     text-align: left;
@@ -79,8 +127,8 @@ img {
     padding-left: 9pt;
     border-left: 5px solid white;
     font-family: 'Lato', sans-serif;
-    font-size: 13pt;
-    top: 14vh;
+    font-size: 1.3vw;
+    top: 15vh;
     left: 6vw;
     text-align: left;
 }
@@ -89,7 +137,7 @@ img {
     position: absolute;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size: 24pt;
+    font-size: 2vw;
     color: #ffffff;
     top:82vh;
     left: 0;
@@ -110,7 +158,6 @@ img {
     height: 15vh;
     width: 15vh;
     animation-fill-mode: forwards;
-    vertical-align: "center";
 }
 
 #spinner {
@@ -189,22 +236,68 @@ img {
   }
 }
 
+/* slide in/out on click */
+
+.slideLeft {
+    animation: 2s ease leftSlide;
+}
+
+@keyframes leftSlide {
+    100% {
+        left: -33vw;
+    }
+}
+
+.slideLeft2 {
+    animation: 2s ease leftSlide2;
+}
+
+@keyframes leftSlide2 {
+    100% {
+        left: -34vw;
+    }
+}
+
+.slideIn {
+    animation: 2s ease inSlide;
+}
+
+@keyframes inSlide {
+    100% {
+        left: 0;
+    }
+}
+
+.slideIn2 {
+    animation: 2s ease inSlide2;
+}
+
+@keyframes inSlide2 {
+    100% {
+        left: -1vw;
+    }
+}
+
 /* rules for columns */
 .column {
+    position: absolute;
     float: left;
-    width: 33%;
-    height:100vh;
+    height: 100vh;
     display: block;
     background-image: url("bd_bg-alpha.png");
     background-size:contain;
     background-repeat: repeat-y;
 }
 
-.column-img {
-    padding-top: 30%;
+.column img {
+    padding-top: 25vh;
     width: 30vw;
     height: 30vw;
     transform: scale(0.8);
+}
+
+.column h1 {
+    text-align: center;
 }
 
 /* increase column elements size on hover */
@@ -218,24 +311,36 @@ img {
 
 /* change column color on hover */
 #col1 {
+    z-index: 3;
+    width: 33%;
+    left: 0vw;
     transition: background-color 0.3s ease;
     background-color: #ffcf8c;
+    animation-fill-mode: forwards;
 }
 #col1:hover {
     transition: background-color 0.3s ease;
     background-color: #ffc573;
 }
 #col2 {
+    z-index: 2;
+    width: 34%;
+    left: 33vw;
     transition: background-color 0.3s ease;
     background-color: #ff9a8c;
+    animation-fill-mode: forwards;
 }
 #col2:hover {
     transition: background-color 0.3s ease;
     background-color: #ff8373;
 }
 #col3 {
+    z-index: 1;
+    width: 33%;
+    left: 67vw;
     transition: background-color 0.3s ease;
     background-color: #8cd1ff;
+    animation-fill-mode: forwards;
 }
 #col3:hover {
     transition: background-color 0.3s ease;

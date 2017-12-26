@@ -17,16 +17,21 @@
             <div id="loadtext">CLICK TO ENTER</div>
             <div id="spinner"></div>
         </div>
-            <div class="column" id="col1">
-                <img class="column-img" src="about.png" alt="about">
+            <div id="nav">
+                <h1>ABOUT</h1>
+                <h1>PORTFOLIO</h1>
+                <h1>CONTACT</h1>
+            </div>
+            <div class="column" id="col1" onclick="select1()">
+                <img src="about.png" alt="about">
                 <h1 style="color: #5a3501">ABOUT</h1>
             </div>
-            <div class="column" id="col2" style="width: 34%;">
-                <img class="column-img" src="portfolio.png" alt="about">
+            <div class="column" id="col2" onclick="select2()">
+                <img src="portfolio.png" alt="about">
                 <h1 style="color: #5a010e">PORTFOLIO</h1>
             </div>
-            <div class="column" id="col3">
-                <img class="column-img" src="contact.png" alt="about">
+            <div class="column" id="col3" onclick="select3()">
+                <img src="contact.png" alt="about">
                 <h1 style="color: #012f5a">CONTACT</h1>
             </div>
             <br style="clear: left;" />
