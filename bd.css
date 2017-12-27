@@ -18,9 +18,20 @@ h1 {
 }
 
 h2 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: #ffffff;
     transition: 0.3s ease;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    padding-left: 2vw;
+    padding-right: 2.2vw;
+    text-indent: 4vw;
+    font-weight: 500;
+    font-size: 1.3vw;
+    text-align: justify;
+    color: black;
 }
 
 #nav { 
@@ -104,16 +115,6 @@ h2 {
     left: 0; 
 }
 
-
-/*
-p {
-    font-family: 'Lato', sans-serif;
-    font-size: 18pt;
-    text-align: center;
-    color: black;
-}
-*/
-
 img {
     display: block;
     margin: auto;
@@ -148,7 +149,7 @@ img {
 
 #overlay h1 {
     position: absolute;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 2vw;
     top: 9vh;
     left: 6vw;
@@ -159,7 +160,7 @@ img {
     position: absolute;
     padding-left: 9pt;
     border-left: 5px solid white;
-    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     font-size: 1.3vw;
     top: 15vh;
     left: 6vw;
@@ -376,4 +377,46 @@ img {
 #col3:hover {
     transition: background-color 0.3s ease;
     background-color: #73c7ff;
+}
+
+#box-about {
+    width: 67vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    border-left: 0.5vw solid #5a3501;
+    background-color: #ffcf8c;
+    background-image: url(bd_panel_alpha.png);
+    background-size: contain;
+    background-repeat: repeat-y;
+    transition: left 2s ease;
+}
+
+#box-portfolio {
+    width: 67vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    border-left: 0.5vw solid #5a010e;
+    background-color: #ff9a8c;
+    background-image: url(bd_panel_alpha.png);
+    background-size: contain;
+    background-repeat: repeat-y;
+    transition: left 2s ease;
+}
+
+#box-contact {
+    width: 67vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    border-left: 0.5vw solid #012f5a;
+    background-color: #8cd1ff;
+    background-image: url(bd_panel_alpha.png);
+    background-size: contain;
+    background-repeat: repeat-y;
+    transition: left 2s ease;
 }
