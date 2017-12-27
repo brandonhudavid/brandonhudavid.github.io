@@ -12,6 +12,7 @@
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
+    font-size: 2.5vw;
     color: #ffffff;
     transition: 0.3s ease;
     text-align: center;
@@ -19,29 +20,55 @@ h1 {
 
 h2 {
     font-family: 'Raleway', sans-serif;
+    font-size: 1.0vw;
     color: #ffffff;
     transition: 0.3s ease;
+    font-weight: 400;
+    text-align: left;
 }
 
 p {
     font-family: 'Raleway', sans-serif;
     padding-left: 2vw;
     padding-right: 2.2vw;
-    text-indent: 4vw;
     font-weight: 500;
     font-size: 1.3vw;
     text-align: justify;
     color: black;
 }
 
+a {
+    transition: 0.3s ease;
+}
+
+a h1:after {   
+    position: absolute;
+    bottom: 0;
+    height: 0.3vw;
+    content: "";
+    left: 0;
+    background: #5a3501;;
+    transition: width 0.3s ease 0s;
+    width: 0;
+}
+
+a h1:hover {
+    transform: scale(1.1);
+    color: #5a3501;
+}
+
+a h1:hover:after { 
+    width: 100%; 
+}
+
 #nav { 
     background-color: rgba(0, 0, 0, 0.8);
     display: inline;
     width: 35vw;
-    height: 3.5vw;
+    height: 3.7vw;
     z-index: 4;
     position: absolute;
-    top: -3.5vw;
+    top: -4vw;
     left: -2vw;
     animation-fill-mode: forwards;
 }
@@ -92,18 +119,18 @@ p {
     position: relative;
     font-size: 1.4vw;
     float: right;
-    padding-top: 0.9vw;
-    padding-bottom: 0.9vw;
-    padding-left: 2.1vw;
-    padding-right: 2.1vw;
+    padding-top: 1vw;
+    padding-bottom: 0.975vw;
+    padding-left: 2.4vw;
+    padding-right: 2.4vw;
 }
 
 
 .navtext:after {   
     position: absolute;
     bottom: 0;
+    height: 0.4vw;
     content: "";
-    height: 0.35vw;
     left: 50%;
     background: #ffffff;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
@@ -150,7 +177,7 @@ img {
 #overlay h1 {
     position: absolute;
     font-weight: 700;
-    font-size: 2vw;
+    font-size: 1.775vw;
     top: 9vh;
     left: 6vw;
     text-align: left;
@@ -342,8 +369,8 @@ img {
 #col1 {
     z-index: 3;
     width: 33%;
-    top: -100vh;
-    left: 0vw;
+    top: -100%;
+    left: 0%;
     transition: background-color 0.3s ease;
     background-color: #ffcf8c;
     animation-fill-mode: forwards;
@@ -355,8 +382,8 @@ img {
 #col2 {
     z-index: 2;
     width: 34%;
-    top: 100vh;
-    left: 33vw;
+    top: 100%;
+    left: 33%;
     transition: background-color 0.3s ease;
     background-color: #ff9a8c;
     animation-fill-mode: forwards;
@@ -368,8 +395,8 @@ img {
 #col3 {
     z-index: 1;
     width: 33%;
-    top: -100vh;
-    left: 67vw;
+    top: -100%;
+    left: 67%;
     transition: background-color 0.3s ease;
     background-color: #8cd1ff;
     animation-fill-mode: forwards;
@@ -380,11 +407,12 @@ img {
 }
 
 #box-about {
-    width: 67vw;
+    z-index: 3;
+    width: 67%;
     height: 100%;
     position: absolute;
     top: 0;
-    left: 100vw;
+    left: 100%;
     border-left: 0.5vw solid #5a3501;
     background-color: #ffcf8c;
     background-image: url(bd_panel_alpha.png);
@@ -394,29 +422,89 @@ img {
 }
 
 #box-portfolio {
-    width: 67vw;
+    z-index: 2;
+    width: 67%;
     height: 100%;
     position: absolute;
     top: 0;
-    left: 100vw;
+    left: 100%;
     border-left: 0.5vw solid #5a010e;
     background-color: #ff9a8c;
     background-image: url(bd_panel_alpha.png);
     background-size: contain;
     background-repeat: repeat-y;
     transition: left 2s ease;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 #box-contact {
-    width: 67vw;
+    z-index: 1;
+    width: 67%;
     height: 100%;
     position: absolute;
     top: 0;
-    left: 100vw;
+    left: 100%;
     border-left: 0.5vw solid #012f5a;
     background-color: #8cd1ff;
     background-image: url(bd_panel_alpha.png);
     background-size: contain;
     background-repeat: repeat-y;
     transition: left 2s ease;
+}
+
+.panelh {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.75vw;
+    text-decoration: underline;
+    text-align: left;
+    padding-left: 2vw;
+}
+
+a h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    float: left;
+    font-size: 1.1vw;
+    text-align: left;
+    position: absolute;
+    left: 2vw;
+    transition: 0.3s ease;   
+}
+
+a h2:after {   
+    position: absolute;
+    bottom: 0;
+    height: 0.15vw;
+    content: "";
+    left: 0;
+    background: #000000;
+    transition: width 0.3s ease 0s;
+    width: 0;
+}
+
+a h2:hover {
+    transform: scale(1.05);
+}
+
+a h2:hover:after { 
+    width: 100%; 
+}
+
+.gallery {
+    display: inline;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    border-bottom: 0.4vw solid #5a010e;
+}
+
+.gallery img {
+    margin: 1vw;
+    padding-bottom: 0.2vw;
+    float: left;
+    transition: 0.3s ease;
 }
