@@ -59,3 +59,46 @@ function select(elem){
         document.getElementById("col3").style.transition = "left 2s ease, background-color 0.3s ease"
     }
 }
+
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+    if (dots[slideIndex-1].id == "1") {
+        document.getElementById("1").style.opacity = 1
+        document.getElementById("2").style.opacity = 0.6
+        document.getElementById("3").style.opacity = 0.6;}
+    else if (dots[slideIndex-1].id == "2") {
+        document.getElementById("1").style.opacity = 0.6
+        document.getElementById("2").style.opacity = 1
+        document.getElementById("3").style.opacity = 0.6;}
+    else {
+        document.getElementById("1").style.opacity = 0.6
+        document.getElementById("2").style.opacity = 0.6
+        document.getElementById("3").style.opacity = 1;}
+  slides[slideIndex-1].style.display = "block";
+}
