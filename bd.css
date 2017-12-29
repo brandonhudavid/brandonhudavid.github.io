@@ -535,7 +535,6 @@ a h2:hover:after {
 
 .thumbcol {
     display: inline-block;
-    overflow-x: scroll;
 }
 
 .modalcol img {
