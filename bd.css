@@ -65,7 +65,7 @@ a h1:hover:after {
     background-color: rgba(0, 0, 0, 0.8);
     display: inline;
     width: 35vw;
-    height: 3.7vw;
+    height: 3.65vw;
     z-index: 4;
     position: absolute;
     top: -4vw;
@@ -421,7 +421,7 @@ img {
     transition: left 2s ease;
 }
 
-#box-portfolio {
+#box-software {
     z-index: 2;
     width: 67%;
     height: 100%;
@@ -438,7 +438,7 @@ img {
     overflow-y: scroll;
 }
 
-#box-contact {
+#box-design {
     z-index: 1;
     width: 67%;
     height: 100%;

@@ -20,8 +20,8 @@ function select(elem){
     document.getElementById("nav").classList.add("slideNav")
     if (elem.id == "col1" || elem.id == "nav1") {
         document.getElementById("box-about").style.left = "33vw"
-        document.getElementById("box-portfolio").style.left = "100vw"
-        document.getElementById("box-contact").style.left = "100vw"
+        document.getElementById("box-software").style.left = "100vw"
+        document.getElementById("box-design").style.left = "100vw"
         document.getElementById("nav1").classList.add("nav1color")
         document.getElementById("nav2").classList.remove("nav2color")
         document.getElementById("nav3").classList.remove("nav3color")
@@ -33,8 +33,8 @@ function select(elem){
         document.getElementById("col3").style.transition = "left 2s ease, background-color 0.3s ease"
     } else if (elem.id == "col2" || elem.id == "nav2") {
         document.getElementById("box-about").style.left = "100vw"
-        document.getElementById("box-portfolio").style.left = "33vw"
-        document.getElementById("box-contact").style.left = "100vw"
+        document.getElementById("box-software").style.left = "33vw"
+        document.getElementById("box-design").style.left = "100vw"
         document.getElementById("nav1").classList.remove("nav1color")
         document.getElementById("nav2").classList.add("nav2color")
         document.getElementById("nav3").classList.remove("nav3color")
@@ -46,8 +46,8 @@ function select(elem){
         document.getElementById("col3").style.transition = "left 2s ease, background-color 0.3s ease"
     } else {
         document.getElementById("box-about").style.left = "100vw"
-        document.getElementById("box-portfolio").style.left = "100vw"
-        document.getElementById("box-contact").style.left = "33vw"
+        document.getElementById("box-software").style.left = "100vw"
+        document.getElementById("box-design").style.left = "33vw"
         document.getElementById("nav1").classList.remove("nav1color")
         document.getElementById("nav2").classList.remove("nav2color")
         document.getElementById("nav3").classList.add("nav3color")
