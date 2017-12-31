@@ -10,8 +10,8 @@
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
     font-size: 2.5vw;
     color: #ffffff;
     transition: 0.3s ease;
@@ -19,25 +19,26 @@ h1 {
 }
 
 h2 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.0vw;
     color: #ffffff;
     transition: 0.3s ease;
-    font-weight: 400;
+    font-weight: 300;
     text-align: left;
 }
 
 p {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding-left: 2vw;
     padding-right: 2.2vw;
     font-weight: 400;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     text-align: justify;
     color: black;
 }
 
 a {
+    text-decoration: none;
     transition: 0.3s ease;
 }
 
@@ -117,7 +118,7 @@ a h1:hover:after {
 }
 
 .navtext {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     color: #ffffff;
     transition: 0.3s ease;
@@ -126,9 +127,9 @@ a h1:hover:after {
     font-size: 1.4vw;
     float: right;
     padding-top: 1vw;
-    padding-bottom: 0.975vw;
-    padding-left: 2.4vw;
-    padding-right: 2.4vw;
+    padding-bottom: 1.04vw;
+    padding-left: 2.55vw;
+    padding-right: 2.55vw;
 }
 
 
@@ -182,7 +183,7 @@ img {
 
 #overlay h1 {
     position: absolute;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 1.775vw;
     top: 9vh;
     left: 6vw;
@@ -193,7 +194,6 @@ img {
     position: absolute;
     padding-left: 9pt;
     border-left: 5px solid white;
-    font-weight: 400;
     font-size: 1.3vw;
     top: 15vh;
     left: 6vw;
@@ -202,8 +202,8 @@ img {
 
 #loadtext {
     position: absolute;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
     font-size: 2vw;
     color: #ffffff;
     top:82vh;
@@ -466,18 +466,17 @@ img {
 }
 
 a h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
     color: #000000;
-    float: left;
+    display: inline-block;
     font-size: 1.1vw;
     text-align: left;
-    position: absolute;
-    left: 2vw;
+    margin-left: 2vw;
+    margin-right: -1vw;
     transition: 0.3s ease;   
 }
 
-a h2:after {   
+
+a h2:after {  
     position: absolute;
     bottom: 0;
     height: 0.15vw;
@@ -488,6 +487,7 @@ a h2:after {
     width: 0;
 }
 
+
 a h2:hover {
     transform: scale(1.05);
 }
@@ -495,23 +495,6 @@ a h2:hover {
 a h2:hover:after { 
     width: 100%; 
 }
-
-.gallery {
-    display: inline;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-    border-bottom: 0.4vw solid #5a010e;
-}
-
-.gallery img {
-    margin: 1vw;
-    padding-bottom: 0.2vw;
-    float: left;
-    transition: 0.3s ease;
-}
-
 
 
 
@@ -526,6 +509,7 @@ a h2:hover:after {
   display: table;
   clear: both;
 }
+
 
 /* Create four equal columns that floats next to eachother */
 
@@ -551,26 +535,14 @@ a h2:hover:after {
     height: 25vh;
     display: inline-block;
     }
-/*
-    display: inline-block;
-    border-bottom: 0 solid #5a010e;
-    transition: border-bottom 0.3s ease, transform 0.3s ease;
-*/
-}
-
-/*
-.modalcol img:hover {
-    transform: scale(1.05);
-    border-bottom: 0.4vw solid #5a010e;
-    transition: border-bottom 0.3s ease, transform 0.3s ease;
-}
-*/
 
 .thumbcol img{
     float: left;
     height:20vh;
     width: auto;
 }
+
+
 
 
 /* The Modal (background) */
@@ -586,6 +558,8 @@ a h2:hover:after {
   overflow: visible;
   background-color: rgba(0,0,0,0.75);
 }
+
+
 
 .modal-content {
     position: relative;
@@ -617,6 +591,10 @@ a h2:hover:after {
 
 /* Hide the slides by default */
 .mySlides {
+  display: none;
+}
+
+.mySlides2 {
   display: none;
 }
 
@@ -670,6 +648,13 @@ img.demo {
     margin: auto;
 }
 
+img.demo2 {
+  opacity: 0.6;
+    height: 10vw;
+    width: auto;
+    margin: auto;
+}
+
 .cursor {
   cursor: pointer;
 }
@@ -678,6 +663,9 @@ img.demo {
     opacity: 1;
 }
 
+.inactive {
+    opacity: 0.6;
+}
 
 img.hover-shadow {
   transition: 0.3s

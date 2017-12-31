@@ -102,3 +102,66 @@ function showSlides(n) {
         document.getElementById("3").style.opacity = 1;}
   slides[slideIndex-1].style.display = "block";
 }
+
+// modal 2
+
+function openModal2() {
+  document.getElementById('myModal2').style.display = "block";
+}
+
+function closeModal2() {
+  document.getElementById('myModal2').style.display = "none";
+}
+
+var slideIndex2 = 1;
+showSlides2(slideIndex2);
+
+function plusSlides2(n) {
+  showSlides2(slideIndex2 += n);
+}
+
+function currentSlide2(n) {
+  showSlides2(slideIndex2 = n);
+}
+
+function showSlides2(n) {
+  var i2;
+  var slides2 = document.getElementsByClassName("mySlides2");
+  var dots2 = document.getElementsByClassName("demo2");
+  if (n > slides2.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = slides2.length}
+  for (i2 = 0; i2 < slides2.length; i2++) {
+      slides2[i2].style.display = "none";
+  }
+    if (dots2[slideIndex2-1].id == "4") {
+        document.getElementById("4").style.opacity = 1
+        document.getElementById("5").style.opacity = 0.6
+        document.getElementById("6").style.opacity = 0.6
+        document.getElementById("7").style.opacity = 0.6
+        document.getElementById("8").style.opacity = 0.6;}
+    else if (dots2[slideIndex2-1].id == "5") {
+        document.getElementById("4").style.opacity = 0.6
+        document.getElementById("5").style.opacity = 1
+        document.getElementById("6").style.opacity = 0.6
+        document.getElementById("7").style.opacity = 0.6
+        document.getElementById("8").style.opacity = 0.6;}
+    else if (dots2[slideIndex2-1].id == "6") {
+        document.getElementById("4").style.opacity = 0.6
+        document.getElementById("5").style.opacity = 0.6
+        document.getElementById("6").style.opacity = 1
+        document.getElementById("7").style.opacity = 0.6
+        document.getElementById("8").style.opacity = 0.6;}
+    else if (dots2[slideIndex2-1].id == "7") {
+        document.getElementById("4").style.opacity = 0.6
+        document.getElementById("5").style.opacity = 0.6
+        document.getElementById("6").style.opacity = 0.6
+        document.getElementById("7").style.opacity = 1
+        document.getElementById("8").style.opacity = 0.6;}
+    else {
+        document.getElementById("4").style.opacity = 0.6
+        document.getElementById("5").style.opacity = 0.6
+        document.getElementById("6").style.opacity = 0.6
+        document.getElementById("7").style.opacity = 0.6
+        document.getElementById("8").style.opacity = 1;}
+  slides2[slideIndex2-1].style.display = "block";
+}
