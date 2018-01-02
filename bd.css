@@ -459,6 +459,8 @@ img {
     background-size: contain;
     background-repeat: repeat-y;
     transition: left 2s ease;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 #box-software {
@@ -489,6 +491,8 @@ img {
     background-size: contain;
     background-repeat: repeat-y;
     transition: left 2s ease;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .panelh {
@@ -585,7 +589,7 @@ a h2:hover:after {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0,0,0,0.8);
 }
 
 
@@ -595,19 +599,22 @@ a h2:hover:after {
     text-align: center;
 }
 
-.modal-content img{
+.modal-content a img{
     display: inline-block;
-    height: 60vh;
+    text-align: center;
+    margin-top: -10vh;
+    height: 75vh;
     width: auto;
 }
+
 
 /* The Close Button */
 .close {
   color: white;
   position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
+  top: 1vw;
+  right: 2vw;
+  font-size: 4vw;
   font-weight: bold;
 }
 
@@ -627,47 +634,11 @@ a h2:hover:after {
   display: none;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: 3vw;
-  padding: 2vw;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 3vw;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.prev {
-  left: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-
 /* Caption text */
 .caption-container {
   text-align: center;
   background-color: black;
-    padding: 1vw;
+    padding: 0.5vw;
 }
 
 img.demo {
@@ -692,6 +663,13 @@ img.demo3 {
     margin: auto;
 }
 
+img.demo4 {
+  opacity: 1;
+    height: 10vw;
+    width: auto;
+    margin: auto;
+}
+
 .cursor {
   cursor: pointer;
 }
@@ -710,3 +688,11 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 4px 4px 15px 0 rgba(90, 1, 14, 0.8);
+}
+
+img.hover-shadow2 {
+  transition: 0.3s
+}
+
+.hover-shadow2:hover {
+  box-shadow: 4px 4px 15px 0 rgba(1, 47, 90, 0.8);

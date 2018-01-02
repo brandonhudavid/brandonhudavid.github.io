@@ -70,6 +70,15 @@ function select(elem){
     }
 }
 
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 27) {
+        closeModal()
+        closeModal2()
+        closeModal3();
+    }
+}
+
 function openModal() {
   document.getElementById('myModal').style.display = "block";
 }
@@ -80,10 +89,6 @@ function closeModal() {
 
 var slideIndex = 1;
 showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
@@ -126,9 +131,6 @@ function closeModal2() {
 var slideIndex2 = 1;
 showSlides2(slideIndex2);
 
-function plusSlides2(n) {
-  showSlides2(slideIndex2 += n);
-}
 
 function currentSlide2(n) {
   showSlides2(slideIndex2 = n);
@@ -189,10 +191,6 @@ function closeModal3() {
 var slideIndex3 = 1;
 showSlides3(slideIndex3);
 
-function plusSlides3(n) {
-  showSlides3(slideIndex3 += n);
-}
-
 function currentSlide3(n) {
   showSlides3(slideIndex3 = n);
 }
@@ -219,4 +217,81 @@ function showSlides3(n) {
         
     }
   slides3[slideIndex3-1].style.display = "block";
+}
+
+// modal 4
+
+function openModal4() {
+  document.getElementById('myModal4').style.display = "block";
+}
+
+function closeModal4() {
+  document.getElementById('myModal4').style.display = "none";
+}
+
+var slideIndex4 = 1;
+showSlides4(slideIndex4);
+
+function currentSlide4(n) {
+  showSlides4(slideIndex4 = n);
+}
+
+function showSlides4(n) {
+  var i4;
+  var slides4 = document.getElementsByClassName("mySlides4");
+  var dots4 = document.getElementsByClassName("demo4");
+  if (n > slides4.length) {slideIndex4 = 1}
+  if (n < 1) {slideIndex4 = slides4.length}
+  for (i4 = 0; i4 < slides4.length; i4++) {
+      slides4[i4].style.display = "none";
+  }
+    if (dots4[slideIndex4-1].id == "t2") {
+        document.getElementById("t2").style.opacity = 1
+        document.getElementById("t3").style.opacity = 0.6
+        document.getElementById("t4").style.opacity = 0.6
+        document.getElementById("t5").style.opacity = 0.6
+        document.getElementById("t6").style.opacity = 0.6
+        document.getElementById("t7").style.opacity = 0.6;
+    }
+    else if (dots4[slideIndex4-1].id == "t3") {
+        document.getElementById("t2").style.opacity = 0.6
+        document.getElementById("t3").style.opacity = 1
+        document.getElementById("t4").style.opacity = 0.6
+        document.getElementById("t5").style.opacity = 0.6
+        document.getElementById("t6").style.opacity = 0.6
+        document.getElementById("t7").style.opacity = 0.6;
+    }
+    else if (dots4[slideIndex4-1].id == "t4") {
+        document.getElementById("t2").style.opacity = 0.6
+        document.getElementById("t3").style.opacity = 0.6
+        document.getElementById("t4").style.opacity = 1
+        document.getElementById("t5").style.opacity = 0.6
+        document.getElementById("t6").style.opacity = 0.6
+        document.getElementById("t7").style.opacity = 0.6;
+    }
+    else if (dots4[slideIndex4-1].id == "t5") {
+        document.getElementById("t2").style.opacity = 0.6
+        document.getElementById("t3").style.opacity = 0.6
+        document.getElementById("t4").style.opacity = 0.6
+        document.getElementById("t5").style.opacity = 1
+        document.getElementById("t6").style.opacity = 0.6
+        document.getElementById("t7").style.opacity = 0.6;
+    }
+    else if (dots4[slideIndex4-1].id == "t6") {
+        document.getElementById("t2").style.opacity = 0.6
+        document.getElementById("t3").style.opacity = 0.6
+        document.getElementById("t4").style.opacity = 0.6
+        document.getElementById("t5").style.opacity = 0.6
+        document.getElementById("t6").style.opacity = 1
+        document.getElementById("t7").style.opacity = 0.6;
+    }
+    else {
+        document.getElementById("t2").style.opacity = 0.6
+        document.getElementById("t3").style.opacity = 0.6
+        document.getElementById("t4").style.opacity = 0.6
+        document.getElementById("t5").style.opacity = 0.6
+        document.getElementById("t6").style.opacity = 0.6
+        document.getElementById("t7").style.opacity = 1;
+    }
+  slides4[slideIndex4-1].style.display = "block";
 }
