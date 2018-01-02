@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     overflow: hidden;
-    background-image: url(bd_bg-black.png); 
+    background-image: url(img/bd_bg-black.png); 
     background-size: cover;
 }
 
@@ -108,7 +108,7 @@ a h1:hover:after {
 }
 
 .slideNav {
-    animation: 2s ease-out navSlide;
+    animation: 1.25s ease-out navSlide;
 }
 
 @keyframes navSlide {
@@ -212,6 +212,11 @@ img {
     text-align: center;
 }
 
+.fadeload {
+    transition: opacity 0.25s ease;
+    opacity: 0;
+}
+
 #loadtext {
     position: absolute;
     font-family: 'Raleway', sans-serif;
@@ -313,7 +318,7 @@ img {
 /* slide in/out on click */
 
 .slideLeft {
-    animation: 2s ease leftSlide;
+    animation: 1.25s ease leftSlide;
 }
 
 @keyframes leftSlide {
@@ -323,7 +328,7 @@ img {
 }
 
 .slideLeft2 {
-    animation: 2s ease leftSlide2;
+    animation: 1.25s ease leftSlide2;
 }
 
 @keyframes leftSlide2 {
@@ -333,7 +338,7 @@ img {
 }
 
 .slideIn {
-    animation: 2s ease inSlide;
+    animation: 1.25s ease inSlide;
 }
 
 @keyframes inSlide {
@@ -343,7 +348,7 @@ img {
 }
 
 .slideIn2 {
-    animation: 2s ease inSlide2;
+    animation: 1.25s ease inSlide2;
 }
 
 @keyframes inSlide2 {
@@ -358,7 +363,7 @@ img {
     float: left;
     height: 100vh;
     display: block;
-    background-image: url("bd_bg-alpha.png");
+    background-image: url("img/bd_bg-alpha.png");
     background-size:contain;
     background-repeat: repeat-y;
 }
@@ -399,13 +404,13 @@ img {
     }
 }
 
-.column:hover h1{
+.enlarge:hover h1{
     animation: sizeup 0.3s ease;
     animation-fill-mode: forwards;
 }
 
 
-.column:hover img{
+.enlarge:hover img{
     transform: scale(1);
 }
 
@@ -460,52 +465,34 @@ img {
     filter: grayscale(0);
 }
 
-#box-about {
+.box {
     width: 66.667%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 100%;
-    border-left: 0.5vw solid #5a3501;
-    background-color: #ffcf8c;
-    background-image: url(bd_panel_alpha.png);
+    background-image: url(img/bd_panel_alpha.png);
     background-size: contain;
     background-repeat: repeat-y;
-    transition: left 2s ease;
+    transition: left 1.25s ease;
     overflow-x: hidden;
     overflow-y: scroll;
+    
+}
+
+#box-about {
+    border-left: 0.5vw solid #5a3501;
+    background-color: #ffcf8c;
 }
 
 #box-software {
-    width: 66.667%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 100%;
     border-left: 0.5vw solid #5a010e;
     background-color: #ff9a8c;
-    background-image: url(bd_panel_alpha.png);
-    background-size: contain;
-    background-repeat: repeat-y;
-    transition: left 2s ease;
-    overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 #box-design {
-    width: 66.667%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 100%;
     border-left: 0.5vw solid #012f5a;
     background-color: #8cd1ff;
-    background-image: url(bd_panel_alpha.png);
-    background-size: contain;
-    background-repeat: repeat-y;
-    transition: left 2s ease;
-    overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 .panelh {

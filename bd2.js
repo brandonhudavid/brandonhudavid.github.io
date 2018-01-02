@@ -1,6 +1,6 @@
 window.addEventListener("load", function()
 {
-    document.getElementById("preloadtext").classList.add("fadeout")
+    document.getElementById("preloadtext").classList.add("fadeload")
     document.getElementById("loadtext").classList.add("fadein")
     document.getElementById("bgimg").classList.add("fadein")
     document.getElementById("spinner").classList.add("fadeout")
@@ -19,6 +19,9 @@ function select(elem){
     document.getElementById("col2").onclick = function(){return false;}
     document.getElementById("col3").onclick = function(){return false;}
     document.getElementById("nav").classList.add("slideNav")
+    document.getElementById("col1").classList.remove("enlarge")
+    document.getElementById("col2").classList.remove("enlarge")
+    document.getElementById("col3").classList.remove("enlarge")
     if (elem.id == "col1" || elem.id == "nav1") {
         document.getElementById("box-about").style.left = "33.333vw"
         document.getElementById("box-software").style.left = "100vw"
@@ -27,11 +30,11 @@ function select(elem){
         document.getElementById("nav2").classList.remove("nav2color")
         document.getElementById("nav3").classList.remove("nav3color")
         document.getElementById("col1").style.left = "0vw"
-        document.getElementById("col1").style.transition = "left 2s ease, filter 1s ease"
+        document.getElementById("col1").style.transition = "left 1.25s ease, filter 1s ease"
         document.getElementById("col2").style.left = "-33.334vw"
-        document.getElementById("col2").style.transition = "left 2s ease, filter 1s ease"
+        document.getElementById("col2").style.transition = "left 1.25s ease, filter 1s ease"
         document.getElementById("col3").style.left = "-33.333vw";
-        document.getElementById("col3").style.transition = "left 2s ease, filter 1s ease"
+        document.getElementById("col3").style.transition = "left 1.25s ease, filter 1s ease"
         document.getElementById("col1").style.filter = "grayscale(0%)"
         document.getElementById("col2").style.filter = "grayscale(100%)"
         document.getElementById("col3").style.filter = "grayscale(100%)"
@@ -44,11 +47,11 @@ function select(elem){
         document.getElementById("nav2").classList.add("nav2color")
         document.getElementById("nav3").classList.remove("nav3color")
         document.getElementById("col1").style.left = "-33.333vw"
-        document.getElementById("col1").style.transition = "left 2s ease, filter 1s ease"
+        document.getElementById("col1").style.transition = "left 1.25s ease, filter 1s ease"
         document.getElementById("col2").style.left = "-.001vw"
-        document.getElementById("col2").style.transition = "left 2s ease, filter 1s ease"
+        document.getElementById("col2").style.transition = "left 1.25s ease, filter 1s ease"
         document.getElementById("col3").style.left = "-33.333vw";
-        document.getElementById("col3").style.transition = "left 2s ease, filter 1s ease"
+        document.getElementById("col3").style.transition = "left 1.25s ease, filter 1s ease"
         document.getElementById("col1").style.filter = "grayscale(100%)"
         document.getElementById("col2").style.filter = "grayscale(0%)"
         document.getElementById("col3").style.filter = "grayscale(100%)"
@@ -60,11 +63,11 @@ function select(elem){
         document.getElementById("nav2").classList.remove("nav2color")
         document.getElementById("nav3").classList.add("nav3color")
         document.getElementById("col1").style.left = "-33.333vw"
-        document.getElementById("col1").style.transition = "left 2s ease, filter 1s ease"
+        document.getElementById("col1").style.transition = "left 1.25s ease, filter 1s ease"
         document.getElementById("col2").style.left = "-33.334vw"
-        document.getElementById("col2").style.transition = "left 2s ease, filter 1s ease"
+        document.getElementById("col2").style.transition = "left 1.25s ease, filter 1s ease"
         document.getElementById("col3").style.left = "0vw";
-        document.getElementById("col3").style.transition = "left 2s ease, filter 1s ease"
+        document.getElementById("col3").style.transition = "left 1.25s ease, filter 1s ease"
         document.getElementById("col1").style.filter = "grayscale(100%)"
         document.getElementById("col2").style.filter = "grayscale(100%)"
         document.getElementById("col3").style.filter = "grayscale(0%)"
@@ -74,302 +77,144 @@ function select(elem){
 document.onkeydown = function(evt) {
     evt = evt || window.event;
     if (evt.keyCode == 27) {
-        closeModal()
-        closeModal2()
-        closeModal3()
-        closeModal4()
-        closeModal5();
+        closeModal('myModal')
+        closeModal('myModal2')
+        closeModal('myModal3')
+        closeModal('myModal4')
+        closeModal('myModal5');
     }
 }
 
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
+function openModal(modal) {
+  document.getElementById(modal).style.display = "block";
 }
 
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
+function closeModal(modal) {
+  document.getElementById(modal).style.display = "none";
 }
 
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-    if (dots[slideIndex-1].id == "1") {
-        document.getElementById("1").style.opacity = 1
-        document.getElementById("2").style.opacity = 0.6
-        document.getElementById("3").style.opacity = 0.6;}
-    else if (dots[slideIndex-1].id == "2") {
-        document.getElementById("1").style.opacity = 0.6
-        document.getElementById("2").style.opacity = 1
-        document.getElementById("3").style.opacity = 0.6;}
-    else {
+function currentSlide(modal, n) {
+    var i;
+    if (modal == 'myModal') {
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
         document.getElementById("1").style.opacity = 0.6
         document.getElementById("2").style.opacity = 0.6
-        document.getElementById("3").style.opacity = 1;}
-  slides[slideIndex-1].style.display = "block";
-}
-
-// modal 2
-
-function openModal2() {
-  document.getElementById('myModal2').style.display = "block";
-}
-
-function closeModal2() {
-  document.getElementById('myModal2').style.display = "none";
-}
-
-var slideIndex2 = 1;
-showSlides2(slideIndex2);
-
-
-function currentSlide2(n) {
-  showSlides2(slideIndex2 = n);
-}
-
-function showSlides2(n) {
-  var i2;
-  var slides2 = document.getElementsByClassName("mySlides2");
-  var dots2 = document.getElementsByClassName("demo2");
-  if (n > slides2.length) {slideIndex2 = 1}
-  if (n < 1) {slideIndex2 = slides2.length}
-  for (i2 = 0; i2 < slides2.length; i2++) {
-      slides2[i2].style.display = "none";
-  }
-    if (dots2[slideIndex2-1].id == "4") {
-        document.getElementById("4").style.opacity = 1
-        document.getElementById("5").style.opacity = 0.6
-        document.getElementById("6").style.opacity = 0.6
-        document.getElementById("7").style.opacity = 0.6
-        document.getElementById("8").style.opacity = 0.6;}
-    else if (dots2[slideIndex2-1].id == "5") {
-        document.getElementById("4").style.opacity = 0.6
-        document.getElementById("5").style.opacity = 1
-        document.getElementById("6").style.opacity = 0.6
-        document.getElementById("7").style.opacity = 0.6
-        document.getElementById("8").style.opacity = 0.6;}
-    else if (dots2[slideIndex2-1].id == "6") {
-        document.getElementById("4").style.opacity = 0.6
-        document.getElementById("5").style.opacity = 0.6
-        document.getElementById("6").style.opacity = 1
-        document.getElementById("7").style.opacity = 0.6
-        document.getElementById("8").style.opacity = 0.6;}
-    else if (dots2[slideIndex2-1].id == "7") {
-        document.getElementById("4").style.opacity = 0.6
-        document.getElementById("5").style.opacity = 0.6
-        document.getElementById("6").style.opacity = 0.6
-        document.getElementById("7").style.opacity = 1
-        document.getElementById("8").style.opacity = 0.6;}
-    else {
-        document.getElementById("4").style.opacity = 0.6
-        document.getElementById("5").style.opacity = 0.6
-        document.getElementById("6").style.opacity = 0.6
-        document.getElementById("7").style.opacity = 0.6
-        document.getElementById("8").style.opacity = 1;}
-  slides2[slideIndex2-1].style.display = "block";
-}
-
-// modal 3
-
-function openModal3() {
-  document.getElementById('myModal3').style.display = "block";
-}
-
-function closeModal3() {
-  document.getElementById('myModal3').style.display = "none";
-}
-
-var slideIndex3 = 1;
-showSlides3(slideIndex3);
-
-function currentSlide3(n) {
-  showSlides3(slideIndex3 = n);
-}
-
-function showSlides3(n) {
-  var i3;
-  var slides3 = document.getElementsByClassName("mySlides3");
-  var dots3 = document.getElementsByClassName("demo3");
-  if (n > slides3.length) {slideIndex3 = 1}
-  if (n < 1) {slideIndex3 = slides3.length}
-  for (i3 = 0; i3 < slides3.length; i3++) {
-      slides3[i3].style.display = "none";
-  }
-    if (dots3[slideIndex3-1].id == "9") {
-        document.getElementById("9").style.opacity = 1
-        document.getElementById("10").style.opacity = 0.6;
+        document.getElementById("3").style.opacity = 0.6
+        if (dots[n-1].id == "1") {
+            document.getElementById("1").style.opacity = 1;}
+        else if (dots[n-1].id == "2") {
+            document.getElementById("2").style.opacity = 1;}
+        else {
+            document.getElementById("3").style.opacity = 1;}
+        slides[n-1].style.display = "block";
     }
-    else {
+    else if (modal == 'myModal2') {
+        var slides = document.getElementsByClassName("mySlides2");
+        var dots = document.getElementsByClassName("demo2");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        document.getElementById("4").style.opacity = 0.6
+        document.getElementById("5").style.opacity = 0.6
+        document.getElementById("6").style.opacity = 0.6
+        document.getElementById("7").style.opacity = 0.6
+        document.getElementById("8").style.opacity = 0.6
+        if (dots[n-1].id == "4") {
+            document.getElementById("4").style.opacity = 1;}
+        else if (dots[n-1].id == "5") {
+            document.getElementById("5").style.opacity = 1;}
+        else if (dots[n-1].id == "6") {
+            document.getElementById("6").style.opacity = 1;}
+        else if (dots[n-1].id == "7") {
+            document.getElementById("7").style.opacity = 1;}
+        else {
+            document.getElementById("8").style.opacity = 1;}
+        slides[n-1].style.display = "block";
+    }
+    else if (modal == 'myModal3') {
+        var slides = document.getElementsByClassName("mySlides3");
+        var dots = document.getElementsByClassName("demo3");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
         document.getElementById("9").style.opacity = 0.6
-        document.getElementById("10").style.opacity = 1;
-        
+        document.getElementById("10").style.opacity = 0.6
+        if (dots[n-1].id == "9") {
+            document.getElementById("9").style.opacity = 1;
+        }
+        else {
+            document.getElementById("10").style.opacity = 1;
+        }
+        slides[n-1].style.display = "block";
     }
-  slides3[slideIndex3-1].style.display = "block";
-}
-
-// modal 4
-
-function openModal4() {
-  document.getElementById('myModal4').style.display = "block";
-}
-
-function closeModal4() {
-  document.getElementById('myModal4').style.display = "none";
-}
-
-var slideIndex4 = 1;
-showSlides4(slideIndex4);
-
-function currentSlide4(n) {
-  showSlides4(slideIndex4 = n);
-}
-
-function showSlides4(n) {
-  var i4;
-  var slides4 = document.getElementsByClassName("mySlides4");
-  var dots4 = document.getElementsByClassName("demo4");
-  if (n > slides4.length) {slideIndex4 = 1}
-  if (n < 1) {slideIndex4 = slides4.length}
-  for (i4 = 0; i4 < slides4.length; i4++) {
-      slides4[i4].style.display = "none";
-  }
-    if (dots4[slideIndex4-1].id == "t1") {
-        document.getElementById("t1").style.opacity = 1
-        document.getElementById("t2").style.opacity = 0.6
-        document.getElementById("t3").style.opacity = 0.6
-        document.getElementById("t4").style.opacity = 0.6
-        document.getElementById("t5").style.opacity = 0.6
-        document.getElementById("t6").style.opacity = 0.6;
-    }
-    else if (dots4[slideIndex4-1].id == "t2") {
-        document.getElementById("t1").style.opacity = 0.6
-        document.getElementById("t2").style.opacity = 1
-        document.getElementById("t3").style.opacity = 0.6
-        document.getElementById("t4").style.opacity = 0.6
-        document.getElementById("t5").style.opacity = 0.6
-        document.getElementById("t6").style.opacity = 0.6;
-    }
-    else if (dots4[slideIndex4-1].id == "t3") {
-        document.getElementById("t1").style.opacity = 0.6
-        document.getElementById("t2").style.opacity = 0.6
-        document.getElementById("t3").style.opacity = 1
-        document.getElementById("t4").style.opacity = 0.6
-        document.getElementById("t5").style.opacity = 0.6
-        document.getElementById("t6").style.opacity = 0.6;
-    }
-    else if (dots4[slideIndex4-1].id == "t4") {
-        document.getElementById("t1").style.opacity = 0.6
-        document.getElementById("t2").style.opacity = 0.6
-        document.getElementById("t3").style.opacity = 0.6
-        document.getElementById("t4").style.opacity = 1
-        document.getElementById("t5").style.opacity = 0.6
-        document.getElementById("t6").style.opacity = 0.6;
-    }
-    else if (dots4[slideIndex4-1].id == "t5") {
-        document.getElementById("t1").style.opacity = 0.6
-        document.getElementById("t2").style.opacity = 0.6
-        document.getElementById("t3").style.opacity = 0.6
-        document.getElementById("t4").style.opacity = 0.6
-        document.getElementById("t5").style.opacity = 1
-        document.getElementById("t6").style.opacity = 0.6;
-    }
-    else {
+    else if (modal == 'myModal4') {
+        var slides = document.getElementsByClassName("mySlides4");
+        var dots = document.getElementsByClassName("demo4");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
         document.getElementById("t1").style.opacity = 0.6
         document.getElementById("t2").style.opacity = 0.6
         document.getElementById("t3").style.opacity = 0.6
         document.getElementById("t4").style.opacity = 0.6
         document.getElementById("t5").style.opacity = 0.6
-        document.getElementById("t6").style.opacity = 1;
+        document.getElementById("t6").style.opacity = 0.6
+        if (dots[n-1].id == "t1") {
+            document.getElementById("t1").style.opacity = 1;
+        }
+        else if (dots[n-1].id == "t2") {
+            document.getElementById("t2").style.opacity = 1;
+        }
+        else if (dots[n-1].id == "t3") {
+            document.getElementById("t3").style.opacity = 1;
+        }
+        else if (dots[n-1].id == "t4") {
+            document.getElementById("t4").style.opacity = 1;
+        }
+        else if (dots[n-1].id == "t5") {
+            document.getElementById("t5").style.opacity = 1;
+        }
+        else {
+            document.getElementById("t6").style.opacity = 1;
+        }
+        slides[n-1].style.display = "block";
     }
-  slides4[slideIndex4-1].style.display = "block";
-}
-
-// modal 5
-
-function openModal5() {
-  document.getElementById('myModal5').style.display = "block";
-}
-
-function closeModal5() {
-  document.getElementById('myModal5').style.display = "none";
-}
-
-var slideIndex5 = 1;
-showSlides5(slideIndex5);
-
-function currentSlide5(n) {
-  showSlides5(slideIndex5 = n);
-}
-
-function showSlides5(n) {
-  var i5;
-  var slides5 = document.getElementsByClassName("mySlides5");
-  var dots5 = document.getElementsByClassName("demo5");
-  if (n > slides5.length) {slideIndex5 = 1}
-  if (n < 1) {slideIndex5 = slides5.length}
-  for (i5 = 0; i5 < slides5.length; i5++) {
-      slides5[i5].style.display = "none";
-  }
-    if (dots5[slideIndex5-1].id == "w1") {
-        document.getElementById("w1").style.opacity = 1
-        document.getElementById("w2").style.opacity = 0.6
-        document.getElementById("w3").style.opacity = 0.6
-        document.getElementById("w4").style.opacity = 0.6
-        document.getElementById("w5").style.opacity = 0.6
-        document.getElementById("w6").style.opacity = 0.6;
-    }
-    else if (dots5[slideIndex5-1].id == "w2") {
-        document.getElementById("w1").style.opacity = 0.6
-        document.getElementById("w2").style.opacity = 1
-        document.getElementById("w3").style.opacity = 0.6
-        document.getElementById("w4").style.opacity = 0.6
-        document.getElementById("w5").style.opacity = 0.6
-        document.getElementById("w6").style.opacity = 0.6;
-    }
-    else if (dots5[slideIndex5-1].id == "w3") {
-        document.getElementById("w1").style.opacity = 0.6
-        document.getElementById("w2").style.opacity = 0.6
-        document.getElementById("w3").style.opacity = 1
-        document.getElementById("w4").style.opacity = 0.6
-        document.getElementById("w5").style.opacity = 0.6
-        document.getElementById("w6").style.opacity = 0.6;
-    }
-    else if (dots5[slideIndex5-1].id == "w4") {
-        document.getElementById("w1").style.opacity = 0.6
-        document.getElementById("w2").style.opacity = 0.6
-        document.getElementById("w3").style.opacity = 0.6
-        document.getElementById("w4").style.opacity = 1
-        document.getElementById("w5").style.opacity = 0.6
-        document.getElementById("w6").style.opacity = 0.6;
-    }
-    else if (dots5[slideIndex5-1].id == "w5") {
-        document.getElementById("w1").style.opacity = 0.6
-        document.getElementById("w2").style.opacity = 0.6
-        document.getElementById("w3").style.opacity = 0.6
-        document.getElementById("w4").style.opacity = 0.6
-        document.getElementById("w5").style.opacity = 1
-        document.getElementById("w6").style.opacity = 0.6;
-    }
-    else {
+    else if (modal == 'myModal5') {
+        var slides = document.getElementsByClassName("mySlides5");
+        var dots = document.getElementsByClassName("demo5");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
         document.getElementById("w1").style.opacity = 0.6
         document.getElementById("w2").style.opacity = 0.6
         document.getElementById("w3").style.opacity = 0.6
         document.getElementById("w4").style.opacity = 0.6
         document.getElementById("w5").style.opacity = 0.6
-        document.getElementById("w6").style.opacity = 1;
+        document.getElementById("w6").style.opacity = 0.6
+        if (dots[n-1].id == "w1") {
+            document.getElementById("w1").style.opacity = 1;
+        }
+        else if (dots[n-1].id == "w2") {
+            document.getElementById("w2").style.opacity = 1;
+        }
+        else if (dots[n-1].id == "w3") {
+            document.getElementById("w3").style.opacity = 1;
+        }
+        else if (dots[n-1].id == "w4") {
+            document.getElementById("w4").style.opacity = 1;
+        }
+        else if (dots[n-1].id == "w5") {
+            document.getElementById("w5").style.opacity = 1;
+        }
+        else {
+            document.getElementById("w6").style.opacity = 1;
+        }
+        slides[n-1].style.display = "block";
     }
-  slides5[slideIndex5-1].style.display = "block";
 }
 

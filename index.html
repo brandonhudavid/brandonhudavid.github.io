@@ -8,7 +8,7 @@
     <div id="container">
         <script type="text/javascript" src="bd2.js"></script>
         <div id="overlay">
-            <img id="bgimg" src="bd_logo.png" alt="load";>
+            <img id="bgimg" src="img/bd_logo.png" alt="load";>
             <h1>BRANDON DAVID</h1>
             <h2>Developer and Designer<br>
                 UC Berkeley Class of 2021<br>
@@ -23,7 +23,7 @@
             <div id="nav2" class="navtext" onclick="select(this)">SOFTWARE</div>
             <div id="nav1" class="navtext" onclick="select(this)">ABOUT</div>
         </div>
-        <div id="box-design">
+        <div id="box-design" class="box">
             <h1 style="padding-top: 3vw; color: #012f5a;">DESIGN</h1>
             <div class="panelh" style="color: #012f5a;">Yelp Mock Redesign (WIP)</div>
             <br>
@@ -34,15 +34,15 @@
             <!-- display -->
             <div class="row">
                 <div class="modalcol cursor">
-                    <img src="img/yelp1.png" onclick="openModal3();currentSlide3(1)" class="hover-shadow2">
+                    <img src="img/yelp1.png" onclick="openModal('myModal3');currentSlide('myModal3', 1)" class="hover-shadow2">
                 </div>
                 <div class="modalcol cursor">
-                    <img src="img/yelp2.png" onclick="openModal3();currentSlide3(2)" class="hover-shadow2">
+                    <img src="img/yelp2.png" onclick="openModal('myModal3');currentSlide('myModal3', 2)" class="hover-shadow2">
                 </div>
             </div>
             <!-- modal -->
             <div id="myModal3" class="modal">
-                <span class="close cursor" onclick="closeModal3()">&times;</span>
+                <span class="close cursor" onclick="closeModal('myModal3')">&times;</span>
                 <!-- content -->
                 <div class="modal-content">
                     <div class="mySlides3">
@@ -56,10 +56,10 @@
                 <!-- thumbnails -->
                 <div class="thumbnail">
                     <div class="thumbcol">
-                      <img id="9" class="demo3 cursor" src="img/yelp1.png" onclick="currentSlide3(1)" alt="yelp1">
+                      <img id="9" class="demo3 cursor" src="img/yelp1.png" onclick="currentSlide('myModal3', 1)" alt="yelp1">
                     </div>
                     <div class="thumbcol">
-                      <img id="10" class="demo3 cursor" src="img/yelp2.png" onclick="currentSlide3(2)" alt="yelp2">
+                      <img id="10" class="demo3 cursor" src="img/yelp2.png" onclick="currentSlide('myModal3', 2)" alt="yelp2">
                     </div>
                 </div>
               </div>
@@ -74,27 +74,27 @@
             <!-- display -->
             <div class="row">
                 <div class="modalcol cursor">
-                    <img src="img/tedx2.png" onclick="openModal4();currentSlide4(1)" class="hover-shadow2">
+                    <img src="img/tedx2.png" onclick="openModal('myModal4');currentSlide('myModal4', 1)" class="hover-shadow2">
                 </div>
                 <div class="modalcol cursor">
-                    <img src="img/tedx3.png" onclick="openModal4();currentSlide4(2)" class="hover-shadow2">
+                    <img src="img/tedx3.png" onclick="openModal('myModal4');currentSlide('myModal4', 2)" class="hover-shadow2">
                 </div>
                 <div class="modalcol cursor">
-                    <img src="img/tedx4.png" onclick="openModal4();currentSlide4(3)" class="hover-shadow2">
+                    <img src="img/tedx4.png" onclick="openModal('myModal4');currentSlide('myModal4', 3)" class="hover-shadow2">
                 </div>
                 <div class="modalcol cursor">
-                    <img src="img/tedx5.png" onclick="openModal4();currentSlide4(4)" class="hover-shadow2">
+                    <img src="img/tedx5.png" onclick="openModal('myModal4');currentSlide('myModal4', 4)" class="hover-shadow2">
                 </div>
                 <div class="modalcol cursor">
-                    <img src="img/tedx6.png" onclick="openModal4();currentSlide4(5)" class="hover-shadow2">
+                    <img src="img/tedx6.png" onclick="openModal('myModal4');currentSlide('myModal4', 5)" class="hover-shadow2">
                 </div>
                 <div class="modalcol cursor">
-                    <img src="img/tedx7.png" onclick="openModal4();currentSlide4(6)" class="hover-shadow2">
+                    <img src="img/tedx7.png" onclick="openModal('myModal4');currentSlide('myModal4', 6)" class="hover-shadow2">
                 </div>
             </div>
             <!-- modal -->
             <div id="myModal4" class="modal">
-                <span class="close cursor" onclick="closeModal4()">&times;</span>
+                <span class="close cursor" onclick="closeModal('myModal4')">&times;</span>
                 <!-- content -->
                 <div class="modal-content">
                     <div class="mySlides4">
@@ -120,22 +120,22 @@
                 <!-- thumbnails -->
                 <div class="thumbnail">
                     <div class="thumbcol">
-                      <img id="t1" class="demo4 cursor" src="img/tedx2.png" onclick="currentSlide4(1)" alt="tedx">
+                      <img id="t1" class="demo4 cursor" src="img/tedx2.png" onclick="currentSlide('myModal4', 1)" alt="tedx">
                     </div>
                     <div class="thumbcol">
-                      <img id="t2" class="demo4 cursor" src="img/tedx3.png" onclick="currentSlide4(2)" alt="tedx">
+                      <img id="t2" class="demo4 cursor" src="img/tedx3.png" onclick="currentSlide('myModal4', 2)" alt="tedx">
                     </div>
                     <div class="thumbcol">
-                      <img id="t3" class="demo4 cursor" src="img/tedx4.png" onclick="currentSlide4(3)" alt="tedx">
+                      <img id="t3" class="demo4 cursor" src="img/tedx4.png" onclick="currentSlide('myModal4', 3)" alt="tedx">
                     </div>
                     <div class="thumbcol">
-                      <img id="t4" class="demo4 cursor" src="img/tedx5.png" onclick="currentSlide4(4)" alt="tedx">
+                      <img id="t4" class="demo4 cursor" src="img/tedx5.png" onclick="currentSlide('myModal4', 4)" alt="tedx">
                     </div>
                     <div class="thumbcol">
-                      <img id="t5" class="demo4 cursor" src="img/tedx6.png" onclick="currentSlide4(5)" alt="tedx">
+                      <img id="t5" class="demo4 cursor" src="img/tedx6.png" onclick="currentSlide('myModal4', 5)" alt="tedx">
                     </div>
                     <div class="thumbcol">
-                      <img id="t6" class="demo4 cursor" src="img/tedx7.png" onclick="currentSlide4(6)" alt="tedx">
+                      <img id="t6" class="demo4 cursor" src="img/tedx7.png" onclick="currentSlide('myModal4', 6)" alt="tedx">
                     </div>
                 </div>
               </div>
@@ -150,27 +150,27 @@
             <!-- display -->
             <div class="row">
                 <div class="modalcol cursor">
-                    <img src="img/whs1.png" onclick="openModal5();currentSlide5(1)" class="hover-shadow2">
+                    <img src="img/whs1.png" onclick="openModal('myModal5');currentSlide('myModal5', 1)" class="hover-shadow2">
                 </div>
                 <div class="modalcol cursor">
-                    <img src="img/whs2.png" onclick="openModal5();currentSlide5(2)" class="hover-shadow2">
+                    <img src="img/whs2.png" onclick="openModal('myModal5');currentSlide('myModal5', 2)" class="hover-shadow2">
                 </div>
                 <div class="modalcol cursor">
-                    <img src="img/whs3.png" onclick="openModal5();currentSlide5(3)" class="hover-shadow2">
+                    <img src="img/whs3.png" onclick="openModal('myModal5');currentSlide('myModal5', 3)" class="hover-shadow2">
                 </div>
                 <div class="modalcol cursor">
-                    <img src="img/whs4.png" onclick="openModal5();currentSlide5(4)" class="hover-shadow2">
+                    <img src="img/whs4.png" onclick="openModal('myModal5');currentSlide('myModal5', 4)" class="hover-shadow2">
                 </div>
                 <div class="modalcol cursor">
-                    <img src="img/whs5.png" onclick="openModal5();currentSlide5(5)" class="hover-shadow2">
+                    <img src="img/whs5.png" onclick="openModal('myModal5');currentSlide('myModal5', 5)" class="hover-shadow2">
                 </div>
                 <div class="modalcol cursor">
-                    <img src="img/whs6.png" onclick="openModal5();currentSlide5(6)" class="hover-shadow2">
+                    <img src="img/whs6.png" onclick="openModal('myModal5');currentSlide('myModal5', 6)" class="hover-shadow2">
                 </div>
             </div>
             <!-- modal -->
             <div id="myModal5" class="modal">
-                <span class="close cursor" onclick="closeModal5()">&times;</span>
+                <span class="close cursor" onclick="closeModal('myModal5')">&times;</span>
                 <!-- content -->
                 <div class="modal-content">
                     <div class="mySlides5">
@@ -196,22 +196,22 @@
                 <!-- thumbnails -->
                 <div class="thumbnail">
                     <div class="thumbcol">
-                      <img id="w1" class="demo5 cursor" src="img/whs1.png" onclick="currentSlide5(1)" alt="whs">
+                      <img id="w1" class="demo5 cursor" src="img/whs1.png" onclick="currentSlide('myModal5', 1)" alt="whs">
                     </div>
                     <div class="thumbcol">
-                      <img id="w2" class="demo5 cursor" src="img/whs2.png" onclick="currentSlide5(2)" alt="whs">
+                      <img id="w2" class="demo5 cursor" src="img/whs2.png" onclick="currentSlide('myModal5', 2)" alt="whs">
                     </div>
                     <div class="thumbcol">
-                      <img id="w3" class="demo5 cursor" src="img/whs3.png" onclick="currentSlide5(3)" alt="whs">
+                      <img id="w3" class="demo5 cursor" src="img/whs3.png" onclick="currentSlide('myModal5', 3)" alt="whs">
                     </div>
                     <div class="thumbcol">
-                      <img id="w4" class="demo5 cursor" src="img/whs4.png" onclick="currentSlide5(4)" alt="whs">
+                      <img id="w4" class="demo5 cursor" src="img/whs4.png" onclick="currentSlide('myModal5', 4)" alt="whs">
                     </div>
                     <div class="thumbcol">
-                      <img id="w5" class="demo5 cursor" src="img/whs5.png" onclick="currentSlide5(5)" alt="whs">
+                      <img id="w5" class="demo5 cursor" src="img/whs5.png" onclick="currentSlide('myModal5', 5)" alt="whs">
                     </div>
                     <div class="thumbcol">
-                      <img id="w6" class="demo5 cursor" src="img/whs6.png" onclick="currentSlide5(6)" alt="whs">
+                      <img id="w6" class="demo5 cursor" src="img/whs6.png" onclick="currentSlide('myModal5', 6)" alt="whs">
                     </div>
                 </div>
               </div>
@@ -223,7 +223,7 @@
         
         
         <!-- software -->
-        <div id="box-software">
+        <div id="box-software" class="box">
             <h1 style="padding-top: 3vw; color: #5a010e;">PROGRAMMING AND DEVELOPMENT</h1>
             <div class="panelh" style="color: #5a010e">
                 This website!
@@ -251,18 +251,18 @@
             <!-- display -->
             <div class="row">
               <div class="modalcol cursor">
-                <img src="img/ics1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                <img src="img/ics1.png" onclick="openModal('myModal');currentSlide('myModal', 1)" class="hover-shadow">
               </div>
               <div class="modalcol cursor">
-                <img src="img/ics2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                <img src="img/ics2.png" onclick="openModal('myModal');currentSlide('myModal', 2)" class="hover-shadow">
               </div>
               <div class="modalcol cursor">
-                <img src="img/ics3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                <img src="img/ics3.png" onclick="openModal('myModal');currentSlide('myModal', 3)" class="hover-shadow">
               </div>
             </div>
             <!-- modal -->
             <div id="myModal" class="modal">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <span class="close cursor" onclick="closeModal('myModal')">&times;</span>
                 <!-- content -->    
                 <div class="modal-content">
                     <div class="mySlides">
@@ -279,13 +279,13 @@
                     <!-- thumbnails -->
                     <div class="thumbnail">
                         <div class="thumbcol">
-                          <img id="1" class="demo cursor" src="img/ics1.png" onclick="currentSlide(1)" alt="ics1">
+                          <img id="1" class="demo cursor" src="img/ics1.png" onclick="currentSlide('myModal', 1)" alt="ics1">
                         </div>
                         <div class="thumbcol">
-                          <img id="2" class="demo cursor" src="img/ics2.png" onclick="currentSlide(2)" alt="ics2">
+                          <img id="2" class="demo cursor" src="img/ics2.png" onclick="currentSlide('myModal', 2)" alt="ics2">
                         </div>
                         <div class="thumbcol">
-                          <img id="3" class="demo cursor" src="img/ics3.png" onclick="currentSlide(3)" alt="ics3">
+                          <img id="3" class="demo cursor" src="img/ics3.png" onclick="currentSlide('myModal', 3)" alt="ics3">
                         </div>
                     </div>
                 </div>
@@ -310,24 +310,24 @@
             <!-- display -->
             <div class="row">
                 <div class="modalcol cursor">
-                    <img src="img/robo1.PNG" onclick="openModal2();currentSlide2(1)" class="hover-shadow">
+                    <img src="img/robo1.PNG" onclick="openModal('myModal2');currentSlide('myModal2', 1)" class="hover-shadow">
                 </div>
                 <div class="modalcol cursor">
-                    <img src="img/robo2.PNG" onclick="openModal2();currentSlide2(2)" class="hover-shadow">
+                    <img src="img/robo2.PNG" onclick="openModal('myModal2');currentSlide('myModal2', 2)" class="hover-shadow">
                 </div>
                 <div class="modalcol cursor">
-                    <img src="img/robo3.jpg" onclick="openModal2();currentSlide2(3)" class="hover-shadow">
+                    <img src="img/robo3.jpg" onclick="openModal('myModal2');currentSlide('myModal2', 3)" class="hover-shadow">
                 </div>
                 <div class="modalcol cursor">
-                    <img src="img/robo4.jpg" onclick="openModal2();currentSlide2(4)" class="hover-shadow">
+                    <img src="img/robo4.jpg" onclick="openModal('myModal2');currentSlide('myModal2', 4)" class="hover-shadow">
                 </div>
                 <div class="modalcol cursor">
-                    <img src="img/robo5.jpg" onclick="openModal2();currentSlide2(5)" class="hover-shadow">
+                    <img src="img/robo5.jpg" onclick="openModal('myModal2');currentSlide('myModal2', 5)" class="hover-shadow">
                 </div>
             </div>
             <!-- modal -->
             <div id="myModal2" class="modal">
-                <span class="close cursor" onclick="closeModal2()">&times;</span>
+                <span class="close cursor" onclick="closeModal('myModal2')">&times;</span>
                 <!-- content -->
                 <div class="modal-content">
                     <div class="mySlides2">
@@ -350,19 +350,19 @@
                 <!-- thumbnails -->
                 <div class="thumbnail">
                     <div class="thumbcol">
-                      <img id="4" class="demo2 cursor" src="img/robo1.PNG" onclick="currentSlide2(1)" alt="robo1">
+                      <img id="4" class="demo2 cursor" src="img/robo1.PNG" onclick="currentSlide('myModal2', 1)" alt="robo1">
                     </div>
                     <div class="thumbcol">
-                      <img id="5" class="demo2 cursor" src="img/robo2.PNG" onclick="currentSlide2(2)" alt="robo2">
+                      <img id="5" class="demo2 cursor" src="img/robo2.PNG" onclick="currentSlide('myModal2', 2)" alt="robo2">
                     </div>
                     <div class="thumbcol">
-                      <img id="6" class="demo2 cursor" src="img/robo3.jpg" onclick="currentSlide2(3)" alt="robo3">
+                      <img id="6" class="demo2 cursor" src="img/robo3.jpg" onclick="currentSlide('myModal2', 3)" alt="robo3">
                     </div>
                     <div class="thumbcol">
-                      <img id="7" class="demo2 cursor" src="img/robo4.jpg" onclick="currentSlide2(4)" alt="robo4">
+                      <img id="7" class="demo2 cursor" src="img/robo4.jpg" onclick="currentSlide('myModal2', 4)" alt="robo4">
                     </div>
                     <div class="thumbcol">
-                      <img id="8" class="demo2 cursor" src="img/robo5.jpg" onclick="currentSlide2(5)" alt="robo5">
+                      <img id="8" class="demo2 cursor" src="img/robo5.jpg" onclick="currentSlide('myModal2', 5)" alt="robo5">
                     </div>
                 </div>
               </div>
@@ -370,7 +370,7 @@
         </div>
         
         <!-- about -->
-        <div id="box-about">
+        <div id="box-about" class="box">
             <h1 style="padding-top: 3vw; color: #5a3501;">ABOUT ME</h1>
             <p style="text-indent: 4vw;">
                 Hi there! My name is Brandon David, and I am a freshman studying Electrical Engineering and Computer Science at UC Berkeley. Additionally, I am a volleyball libero, a contemporary hip hop fan, a casual musician, a streetwear fashion enthusiast, a Stephen Curry bandwagoner, a Stranger Things follower, and a dog lover.
@@ -386,25 +386,25 @@
                 Email: <b>brandonhudavid@berkeley.edu</b>
             </p>
             <a href="https://github.com/brandonhudavid" target="_blank">
-                <img src="github-logo.png" alt="github logo" style="float: left; padding-left: 2vw; padding-right: 1vw; padding-top: 1vw; max-width: 3vw; height: auto;">
+                <img src="img/github-logo.png" alt="github logo" style="float: left; padding-left: 2vw; padding-right: 1vw; padding-top: 1vw; max-width: 3vw; height: auto;">
                 <h1>github</h1>
             </a>
             <a href="https://www.linkedin.com/in/brandonhudavid/" target="_blank">
-                <img src="linkedin-logo.png" alt="linkedin logo" style="float: left; padding-left: 2vw; padding-right: 1vw; padding-top: 1vw; max-width: 3vw; height: auto;">
+                <img src="img/linkedin-logo.png" alt="linkedin logo" style="float: left; padding-left: 2vw; padding-right: 1vw; padding-top: 1vw; max-width: 3vw; height: auto;">
                 <h1>linkedin</h1>
             </a>
             
         </div>
-        <div class="column" id="col1" onclick="select(this)">
-            <img src="about.png" alt="about">
+        <div class="column enlarge" id="col1" onclick="select(this)">
+            <img src="img/about.png" alt="about">
             <h1 style="color: #5a3501">ABOUT</h1>
         </div>
-        <div class="column" id="col2" onclick="select(this)">
-            <img src="software.png" alt="software">
+        <div class="column enlarge" id="col2" onclick="select(this)">
+            <img src="img/software.png" alt="software">
             <h1 style="color: #5a010e">SOFTWARE</h1>
         </div>
-        <div class="column" id="col3" onclick="select(this)">
-            <img src="design.png" alt="design">
+        <div class="column enlarge" id="col3" onclick="select(this)">
+            <img src="img/design.png" alt="design">
             <h1 style="color: #012f5a">DESIGN</h1>
         </div>
         
