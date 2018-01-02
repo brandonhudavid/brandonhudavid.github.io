@@ -2,7 +2,7 @@
 <html>
 <head>
     <link href="bd.css" rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:600|Raleway:800,900|Open+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700,800,900|Open+Sans:300,400,700" rel="stylesheet">
 </head>
 <body>
     <div id="container">
@@ -24,7 +24,93 @@
         </div>
         <div id="box-design">
             <h1 style="padding-top: 3vw; color: #012f5a;">DESIGN</h1>
+            <div class="panelh" style="color: #012f5a;">Yelp Mock Redesign</div>
+            <br>
+            <p style="padding-left: 4vw; margin-top: -0.5vw;">
+                Yelp mobile app mock redesign.
+            </p>
+            <!-- Yelp modal -->
+            <!-- display -->
+            <div class="row">
+                <div class="modalcol cursor">
+                    <img src="img/yelp1.png" onclick="openModal3();currentSlide3(1)" class="hover-shadow">
+                </div>
+                <div class="modalcol cursor">
+                    <img src="img/yelp2.png" onclick="openModal3();currentSlide3(2)" class="hover-shadow">
+                </div>
+            </div>
+            <!-- modal -->
+            <div id="myModal3" class="modal">
+                <span class="close cursor" onclick="closeModal3()">&times;</span>
+                <!-- content -->
+                <div class="modal-content">
+                    <div class="mySlides3">
+                        <img src="img/yelp1.png" alt="1">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="img/yelp2.png" alt="2">
+                    </div>
+                    <!-- next/previous -->
+                    <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+                <!-- block -->
+                <div class="caption-container"></div>
+                <!-- thumbnails -->
+                <div class="thumbnail">
+                    <div class="thumbcol">
+                      <img id="9" class="demo3 cursor" src="img/yelp1.png" onclick="currentSlide3(1)" alt="yelp1">
+                    </div>
+                    <div class="thumbcol">
+                      <img id="10" class="demo3 cursor" src="img/yelp2.png" onclick="currentSlide3(2)" alt="yelp2">
+                    </div>
+                </div>
+              </div>
+                
+            </div>
+            <!-- TEDx modal -->
+            <!-- display -->
+        
+            <div class="row">
+                <div class="modalcol cursor">
+                    <img src="img/yelp1.png" onclick="openModal3();currentSlide3(1)" class="hover-shadow">
+                </div>
+                <div class="modalcol cursor">
+                    <img src="img/yelp2.png" onclick="openModal3();currentSlide3(2)" class="hover-shadow">
+                </div>
+            </div>
+            <!-- modal -->
+            <div id="myModal3" class="modal">
+                <span class="close cursor" onclick="closeModal3()">&times;</span>
+                <!-- content -->
+                <div class="modal-content">
+                    <div class="mySlides3">
+                        <img src="img/yelp1.png" alt="1">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="img/yelp2.png" alt="2">
+                    </div>
+                    <!-- next/previous -->
+                    <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+                <!-- block -->
+                <div class="caption-container"></div>
+                <!-- thumbnails -->
+                <div class="thumbnail">
+                    <div class="thumbcol">
+                      <img id="9" class="demo3 cursor" src="img/yelp1.png" onclick="currentSlide3(1)" alt="yelp1">
+                    </div>
+                    <div class="thumbcol">
+                      <img id="10" class="demo3 cursor" src="img/yelp2.png" onclick="currentSlide3(2)" alt="yelp2">
+                    </div>
+                </div>
+              </div>
+            </div>  
+            
         </div>
+        
+        
+        
+        <!-- software -->
         <div id="box-software">
             <h1 style="padding-top: 3vw; color: #5a010e;">PROGRAMMING AND DEVELOPMENT</h1>
             <div class="panelh" style="color: #5a010e">
@@ -49,7 +135,8 @@
             <p style="padding-left: 4vw; margin-top: -0.5vw;">
                 A multi-functional image processing Python script that analyzes pixel hues within images. Compiled into a MAC OS X application bundle with PyInstaller. Utilizes Pillow, a PIL fork, to dictionary pixel data and Tkinter, a GUI toolkit, to establish the user interface. The program's 3 modes allow users to find the most used color in an image, find the percent composition of a color in an image, and sort all images in a directory by a specific color.
             </p>
-            <!-- Images used to open the lightbox -->
+            <!-- ImageColorSort modal -->
+            <!-- display -->
             <div class="row">
               <div class="modalcol cursor">
                 <img src="ics1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
@@ -60,162 +147,123 @@
               <div class="modalcol cursor">
                 <img src="ics3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
               </div>
-            <!--
-              <div class="modalcol">
-                <img src="ics2.png" onclick="openModal();currentSlide(4)">
-              </div>
-            -->
             </div>
-
-            <!-- The Modal/Lightbox -->
+            <!-- modal -->
             <div id="myModal" class="modal">
-              <span class="close cursor" onclick="closeModal()">&times;</span>
-              <div class="modal-content">
-
-                <div class="mySlides">
-                  <img src="ics1.png" alt="1">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <!-- content -->    
+                <div class="modal-content">
+                    <div class="mySlides">
+                        <img src="ics1.png" alt="1">
+                    </div>
+                    <div class="mySlides">
+                        <img src="ics2.png" alt="2">
+                    </div>
+                    <div class="mySlides">
+                        <img src="ics3.png" alt="3">
+                    </div>
+                    <!-- next/previous -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <!-- block -->
+                    <div class="caption-container"></div>
+                    <!-- thumbnails -->
+                    <div class="thumbnail">
+                        <div class="thumbcol">
+                          <img id="1" class="demo cursor" src="ics1.png" onclick="currentSlide(1)" alt="ics1">
+                        </div>
+                        <div class="thumbcol">
+                          <img id="2" class="demo cursor" src="ics2.png" onclick="currentSlide(2)" alt="ics2">
+                        </div>
+                        <div class="thumbcol">
+                          <img id="3" class="demo cursor" src="ics3.png" onclick="currentSlide(3)" alt="ics3">
+                        </div>
+                    </div>
                 </div>
-
-                <div class="mySlides">
-                  <img src="ics2.png" alt="2">
-                </div>
-
-                <div class="mySlides">
-                  <img src="ics3.png" alt="3">
-                </div>
-
-            <!--
-                <div class="mySlides">
-                  <img src="ics2.png" alt="4">
-                </div>
-            -->
-
-                <!-- Next/previous controls -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                <!-- Caption text -->
-                <div class="caption-container">
-                </div>
-
-                <!-- Thumbnail image controls -->
-                <div class="thumbnail">
-                <div class="thumbcol">
-                  <img id="1" class="demo cursor" src="ics1.png" onclick="currentSlide(1)" alt="ics1">
-                </div>
-
-                <div class="thumbcol">
-                  <img id="2" class="demo cursor" src="ics2.png" onclick="currentSlide(2)" alt="ics2">
-                </div>
-
-                <div class="thumbcol">
-                  <img id="3" class="demo cursor" src="ics3.png" onclick="currentSlide(3)" alt="ics3">
-                </div>
-
-            <!-- 
-                <div class="thumbcol">
-                  <img id="4" class="demo cursor" src="ics2.png" onclick="currentSlide(4)" alt="ics2">
-                </div>
-            -->
-                </div>
-              </div>
             </div>    
             
             <div class="panelh" style="color: #5a010e">Team 542 WHS Robotics</div>
             <a href="https://github.com/brandonhudavid/nothing-but-net" target="_blank">
                 <h2>
-                    (VEX: https://github.com/brandonhudavid/nothing-but-net
+                    ( VEX: https://github.com/brandonhudavid/nothing-but-net )
                 </h2>
             </a>
             <a href="https://github.com/brandonhudavid/whs-ftc-16" target="_blank">
                 <h2>
-                    FTC: https://github.com/brandonhudavid/whs-ftc-16 )
+                    ( FTC: https://github.com/brandonhudavid/whs-ftc-16 )
                 </h2>
             </a>
             <br>
             <p style="padding-left: 4vw; margin-top: -0.5vw;">
-                Head programmer for Team 542 Whitney High School Robotics, lead developer for competition code during VEX and FTC competition seasons. VEX programs written in C, and received Think Award for most efficient and effective program at competition. FTC programs written in Java, and utilizes FTC Android Studio. Programs created for teleoperation, autonomous, drivetrain, and various subsystems.
+                Head programmer for Team 542 Whitney High School Robotics; lead developer for competition code during VEX and FTC competition seasons. VEX programs written in C and received Think Award for most efficient and effective program at competition. FTC programs written in Java, utilizes FTC Android Studio. Programs created for teleoperation, autonomous, drivetrain, and various subsystems.
             </p>
-            <!-- Images used to open the lightbox -->
+            <!-- Robotics modal -->
+            <!-- display -->
             <div class="row">
-              <div class="modalcol cursor">
-                <img src="img/robo1.PNG" onclick="openModal2();currentSlide2(1)" class="hover-shadow">
-              </div>
-              <div class="modalcol cursor">
-                <img src="img/robo2.PNG" onclick="openModal2();currentSlide2(2)" class="hover-shadow">
-              </div>
-              <div class="modalcol cursor">
-                <img src="img/robo3.jpg" onclick="openModal2();currentSlide2(3)" class="hover-shadow">
-              </div>
-              <div class="modalcol cursor">
-                <img src="img/robo4.jpg" onclick="openModal2();currentSlide2(4)" class="hover-shadow">
-              </div>
-              <div class="modalcol cursor">
-                <img src="img/robo5.jpg" onclick="openModal2();currentSlide2(5)" class="hover-shadow">
-              </div>
+                <div class="modalcol cursor">
+                    <img src="img/robo1.PNG" onclick="openModal2();currentSlide2(1)" class="hover-shadow">
+                </div>
+                <div class="modalcol cursor">
+                    <img src="img/robo2.PNG" onclick="openModal2();currentSlide2(2)" class="hover-shadow">
+                </div>
+                <div class="modalcol cursor">
+                    <img src="img/robo3.jpg" onclick="openModal2();currentSlide2(3)" class="hover-shadow">
+                </div>
+                <div class="modalcol cursor">
+                    <img src="img/robo4.jpg" onclick="openModal2();currentSlide2(4)" class="hover-shadow">
+                </div>
+                <div class="modalcol cursor">
+                    <img src="img/robo5.jpg" onclick="openModal2();currentSlide2(5)" class="hover-shadow">
+                </div>
             </div>
-
-            <!-- The Modal/Lightbox -->
+            <!-- modal -->
             <div id="myModal2" class="modal">
-              <span class="close cursor" onclick="closeModal2()">&times;</span>
-              <div class="modal-content">
-
-                <div class="mySlides2">
-                  <img src="img/robo1.PNG" alt="1">
-                </div>
-
-                <div class="mySlides2">
-                  <img src="img/robo2.PNG" alt="2">
-                </div>
-
-                <div class="mySlides2">
-                  <img src="img/robo3.jpg" alt="3">
-                </div>
-                  
-                <div class="mySlides2">
-                  <img src="img/robo4.jpg" alt="4">
-                </div>
-                  
-                <div class="mySlides2">
-                  <img src="img/robo5.jpg" alt="5">
-                </div>
-
-                <!-- Next/previous controls -->
-                <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides2(1)">&#10095;</a>
-
-                <!-- Caption text -->
-                <div class="caption-container">
-                </div>
-
-                <!-- Thumbnail image controls -->
+                <span class="close cursor" onclick="closeModal2()">&times;</span>
+                <!-- content -->
+                <div class="modal-content">
+                    <div class="mySlides2">
+                        <img src="img/robo1.PNG" alt="1">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="img/robo2.PNG" alt="2">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="img/robo3.jpg" alt="3">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="img/robo4.jpg" alt="4">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="img/robo5.jpg" alt="5">
+                    </div>
+                    <!-- next/previous -->
+                    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                <!-- block -->
+                <div class="caption-container"></div>
+                <!-- thumbnails -->
                 <div class="thumbnail">
-                <div class="thumbcol">
-                  <img id="4" class="demo2 cursor" src="img/robo1.PNG" onclick="currentSlide2(1)" alt="ics1">
-                </div>
-
-                <div class="thumbcol">
-                  <img id="5" class="demo2 cursor" src="img/robo2.PNG" onclick="currentSlide2(2)" alt="ics2">
-                </div>
-
-                <div class="thumbcol">
-                  <img id="6" class="demo2 cursor" src="img/robo3.jpg" onclick="currentSlide2(3)" alt="ics3">
-                </div>
-
-                <div class="thumbcol">
-                  <img id="7" class="demo2 cursor" src="img/robo4.jpg" onclick="currentSlide2(4)" alt="ics4">
-                </div>
-
-                <div class="thumbcol">
-                  <img id="8" class="demo2 cursor" src="img/robo5.jpg" onclick="currentSlide2(5)" alt="ics5">
-                </div>
+                    <div class="thumbcol">
+                      <img id="4" class="demo2 cursor" src="img/robo1.PNG" onclick="currentSlide2(1)" alt="ics1">
+                    </div>
+                    <div class="thumbcol">
+                      <img id="5" class="demo2 cursor" src="img/robo2.PNG" onclick="currentSlide2(2)" alt="ics2">
+                    </div>
+                    <div class="thumbcol">
+                      <img id="6" class="demo2 cursor" src="img/robo3.jpg" onclick="currentSlide2(3)" alt="ics3">
+                    </div>
+                    <div class="thumbcol">
+                      <img id="7" class="demo2 cursor" src="img/robo4.jpg" onclick="currentSlide2(4)" alt="ics4">
+                    </div>
+                    <div class="thumbcol">
+                      <img id="8" class="demo2 cursor" src="img/robo5.jpg" onclick="currentSlide2(5)" alt="ics5">
+                    </div>
                 </div>
               </div>
             </div>  
-            
-
-            
         </div>
+        
+        <!-- about -->
         <div id="box-about">
             <h1 style="padding-top: 3vw; color: #5a3501;">ABOUT ME</h1>
             <p style="text-indent: 4vw;">
@@ -232,11 +280,11 @@
                 Email: <b>brandonhudavid@berkeley.edu</b>
             </p>
             <a href="https://github.com/brandonhudavid" target="_blank">
-                <img src="github-logo.png" alt="github logo" width=50vw; height=50vw; style="float: left; padding-left: 2vw; padding-right: 1vw; padding-top: 1vw">
+                <img src="github-logo.png" alt="github logo" style="float: left; padding-left: 2vw; padding-right: 1vw; padding-top: 1vw; max-width: 3vw; height: auto;">
                 <h1>github</h1>
             </a>
             <a href="https://www.linkedin.com/in/brandonhudavid/" target="_blank">
-                <img src="linkedin-logo.png" alt="linkedin logo" width=50vw; height=50vw; style="float: left; padding-left: 2vw; padding-right: 1vw; padding-top: 1vw">
+                <img src="linkedin-logo.png" alt="linkedin logo" style="float: left; padding-left: 2vw; padding-right: 1vw; padding-top: 1vw; max-width: 3vw; height: auto;">
                 <h1>linkedin</h1>
             </a>
             

@@ -19,44 +19,54 @@ function select(elem){
     document.getElementById("col3").onclick = function(){return false;}
     document.getElementById("nav").classList.add("slideNav")
     if (elem.id == "col1" || elem.id == "nav1") {
-        document.getElementById("box-about").style.left = "33vw"
+        document.getElementById("box-about").style.left = "33.333vw"
         document.getElementById("box-software").style.left = "100vw"
         document.getElementById("box-design").style.left = "100vw"
         document.getElementById("nav1").classList.add("nav1color")
         document.getElementById("nav2").classList.remove("nav2color")
         document.getElementById("nav3").classList.remove("nav3color")
         document.getElementById("col1").style.left = "0vw"
-        document.getElementById("col1").style.transition = "left 2s ease, background-color 0.3s ease"
-        document.getElementById("col2").style.left = "-34vw"
-        document.getElementById("col2").style.transition = "left 2s ease, background-color 0.3s ease"
-        document.getElementById("col3").style.left = "-33vw";
-        document.getElementById("col3").style.transition = "left 2s ease, background-color 0.3s ease"
+        document.getElementById("col1").style.transition = "left 2s ease, filter 1s ease"
+        document.getElementById("col2").style.left = "-33.334vw"
+        document.getElementById("col2").style.transition = "left 2s ease, filter 1s ease"
+        document.getElementById("col3").style.left = "-33.333vw";
+        document.getElementById("col3").style.transition = "left 2s ease, filter 1s ease"
+        document.getElementById("col1").style.filter = "grayscale(0%)"
+        document.getElementById("col2").style.filter = "grayscale(100%)"
+        document.getElementById("col3").style.filter = "grayscale(100%)"
+        
     } else if (elem.id == "col2" || elem.id == "nav2") {
         document.getElementById("box-about").style.left = "100vw"
-        document.getElementById("box-software").style.left = "33vw"
+        document.getElementById("box-software").style.left = "33.333vw"
         document.getElementById("box-design").style.left = "100vw"
         document.getElementById("nav1").classList.remove("nav1color")
         document.getElementById("nav2").classList.add("nav2color")
         document.getElementById("nav3").classList.remove("nav3color")
-        document.getElementById("col1").style.left = "-33vw"
-        document.getElementById("col1").style.transition = "left 2s ease, background-color 0.3s ease"
-        document.getElementById("col2").style.left = "-1vw"
-        document.getElementById("col2").style.transition = "left 2s ease, background-color 0.3s ease"
-        document.getElementById("col3").style.left = "-33vw";
-        document.getElementById("col3").style.transition = "left 2s ease, background-color 0.3s ease"
+        document.getElementById("col1").style.left = "-33.333vw"
+        document.getElementById("col1").style.transition = "left 2s ease, filter 1s ease"
+        document.getElementById("col2").style.left = "-.001vw"
+        document.getElementById("col2").style.transition = "left 2s ease, filter 1s ease"
+        document.getElementById("col3").style.left = "-33.333vw";
+        document.getElementById("col3").style.transition = "left 2s ease, filter 1s ease"
+        document.getElementById("col1").style.filter = "grayscale(100%)"
+        document.getElementById("col2").style.filter = "grayscale(0%)"
+        document.getElementById("col3").style.filter = "grayscale(100%)"
     } else {
         document.getElementById("box-about").style.left = "100vw"
         document.getElementById("box-software").style.left = "100vw"
-        document.getElementById("box-design").style.left = "33vw"
+        document.getElementById("box-design").style.left = "33.333vw"
         document.getElementById("nav1").classList.remove("nav1color")
         document.getElementById("nav2").classList.remove("nav2color")
         document.getElementById("nav3").classList.add("nav3color")
-        document.getElementById("col1").style.left = "-33vw"
-        document.getElementById("col1").style.transition = "left 2s ease, background-color 0.3s ease"
-        document.getElementById("col2").style.left = "-34vw"
-        document.getElementById("col2").style.transition = "left 2s ease, background-color 0.3s ease"
+        document.getElementById("col1").style.left = "-33.333vw"
+        document.getElementById("col1").style.transition = "left 2s ease, filter 1s ease"
+        document.getElementById("col2").style.left = "-33.334vw"
+        document.getElementById("col2").style.transition = "left 2s ease, filter 1s ease"
         document.getElementById("col3").style.left = "0vw";
-        document.getElementById("col3").style.transition = "left 2s ease, background-color 0.3s ease"
+        document.getElementById("col3").style.transition = "left 2s ease, filter 1s ease"
+        document.getElementById("col1").style.filter = "grayscale(100%)"
+        document.getElementById("col2").style.filter = "grayscale(100%)"
+        document.getElementById("col3").style.filter = "grayscale(0%)"
     }
 }
 
@@ -164,4 +174,49 @@ function showSlides2(n) {
         document.getElementById("7").style.opacity = 0.6
         document.getElementById("8").style.opacity = 1;}
   slides2[slideIndex2-1].style.display = "block";
+}
+
+// modal 3
+
+function openModal3() {
+  document.getElementById('myModal3').style.display = "block";
+}
+
+function closeModal3() {
+  document.getElementById('myModal3').style.display = "none";
+}
+
+var slideIndex3 = 1;
+showSlides3(slideIndex3);
+
+function plusSlides3(n) {
+  showSlides3(slideIndex3 += n);
+}
+
+function currentSlide3(n) {
+  showSlides3(slideIndex3 = n);
+}
+
+function showSlides3(n) {
+  var i3;
+  var slides3 = document.getElementsByClassName("mySlides3");
+  var dots3 = document.getElementsByClassName("demo3");
+  if (n > slides3.length) {slideIndex3 = 1}
+  if (n < 1) {slideIndex3 = slides3.length}
+  for (i3 = 0; i3 < slides3.length; i3++) {
+      slides3[i3].style.display = "none";
+  }
+    if (dots3[slideIndex3-1].id == "9") {
+        document.getElementById("9").style.opacity = 1
+        document.getElementById("10").style.opacity = 0.6;
+//        document.getElementById("6").style.opacity = 0.6
+//        document.getElementById("7").style.opacity = 0.6
+//        document.getElementById("8").style.opacity = 0.6
+    }
+    else {
+        document.getElementById("9").style.opacity = 0.6
+        document.getElementById("10").style.opacity = 1;
+        
+    }
+  slides3[slideIndex3-1].style.display = "block";
 }
