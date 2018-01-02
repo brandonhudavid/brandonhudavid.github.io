@@ -75,7 +75,9 @@ document.onkeydown = function(evt) {
     if (evt.keyCode == 27) {
         closeModal()
         closeModal2()
-        closeModal3();
+        closeModal3()
+        closeModal4()
+        closeModal5();
     }
 }
 
@@ -207,9 +209,6 @@ function showSlides3(n) {
     if (dots3[slideIndex3-1].id == "9") {
         document.getElementById("9").style.opacity = 1
         document.getElementById("10").style.opacity = 0.6;
-//        document.getElementById("6").style.opacity = 0.6
-//        document.getElementById("7").style.opacity = 0.6
-//        document.getElementById("8").style.opacity = 0.6
     }
     else {
         document.getElementById("9").style.opacity = 0.6
@@ -245,53 +244,131 @@ function showSlides4(n) {
   for (i4 = 0; i4 < slides4.length; i4++) {
       slides4[i4].style.display = "none";
   }
-    if (dots4[slideIndex4-1].id == "t2") {
+    if (dots4[slideIndex4-1].id == "t1") {
+        document.getElementById("t1").style.opacity = 1
+        document.getElementById("t2").style.opacity = 0.6
+        document.getElementById("t3").style.opacity = 0.6
+        document.getElementById("t4").style.opacity = 0.6
+        document.getElementById("t5").style.opacity = 0.6
+        document.getElementById("t6").style.opacity = 0.6;
+    }
+    else if (dots4[slideIndex4-1].id == "t2") {
+        document.getElementById("t1").style.opacity = 0.6
         document.getElementById("t2").style.opacity = 1
         document.getElementById("t3").style.opacity = 0.6
         document.getElementById("t4").style.opacity = 0.6
         document.getElementById("t5").style.opacity = 0.6
-        document.getElementById("t6").style.opacity = 0.6
-        document.getElementById("t7").style.opacity = 0.6;
+        document.getElementById("t6").style.opacity = 0.6;
     }
     else if (dots4[slideIndex4-1].id == "t3") {
+        document.getElementById("t1").style.opacity = 0.6
         document.getElementById("t2").style.opacity = 0.6
         document.getElementById("t3").style.opacity = 1
         document.getElementById("t4").style.opacity = 0.6
         document.getElementById("t5").style.opacity = 0.6
-        document.getElementById("t6").style.opacity = 0.6
-        document.getElementById("t7").style.opacity = 0.6;
+        document.getElementById("t6").style.opacity = 0.6;
     }
     else if (dots4[slideIndex4-1].id == "t4") {
+        document.getElementById("t1").style.opacity = 0.6
         document.getElementById("t2").style.opacity = 0.6
         document.getElementById("t3").style.opacity = 0.6
         document.getElementById("t4").style.opacity = 1
         document.getElementById("t5").style.opacity = 0.6
-        document.getElementById("t6").style.opacity = 0.6
-        document.getElementById("t7").style.opacity = 0.6;
+        document.getElementById("t6").style.opacity = 0.6;
     }
     else if (dots4[slideIndex4-1].id == "t5") {
+        document.getElementById("t1").style.opacity = 0.6
         document.getElementById("t2").style.opacity = 0.6
         document.getElementById("t3").style.opacity = 0.6
         document.getElementById("t4").style.opacity = 0.6
         document.getElementById("t5").style.opacity = 1
-        document.getElementById("t6").style.opacity = 0.6
-        document.getElementById("t7").style.opacity = 0.6;
-    }
-    else if (dots4[slideIndex4-1].id == "t6") {
-        document.getElementById("t2").style.opacity = 0.6
-        document.getElementById("t3").style.opacity = 0.6
-        document.getElementById("t4").style.opacity = 0.6
-        document.getElementById("t5").style.opacity = 0.6
-        document.getElementById("t6").style.opacity = 1
-        document.getElementById("t7").style.opacity = 0.6;
+        document.getElementById("t6").style.opacity = 0.6;
     }
     else {
+        document.getElementById("t1").style.opacity = 0.6
         document.getElementById("t2").style.opacity = 0.6
         document.getElementById("t3").style.opacity = 0.6
         document.getElementById("t4").style.opacity = 0.6
         document.getElementById("t5").style.opacity = 0.6
-        document.getElementById("t6").style.opacity = 0.6
-        document.getElementById("t7").style.opacity = 1;
+        document.getElementById("t6").style.opacity = 1;
     }
   slides4[slideIndex4-1].style.display = "block";
 }
+
+// modal 5
+
+function openModal5() {
+  document.getElementById('myModal5').style.display = "block";
+}
+
+function closeModal5() {
+  document.getElementById('myModal5').style.display = "none";
+}
+
+var slideIndex5 = 1;
+showSlides5(slideIndex5);
+
+function currentSlide5(n) {
+  showSlides5(slideIndex5 = n);
+}
+
+function showSlides5(n) {
+  var i5;
+  var slides5 = document.getElementsByClassName("mySlides5");
+  var dots5 = document.getElementsByClassName("demo5");
+  if (n > slides5.length) {slideIndex5 = 1}
+  if (n < 1) {slideIndex5 = slides5.length}
+  for (i5 = 0; i5 < slides5.length; i5++) {
+      slides5[i5].style.display = "none";
+  }
+    if (dots5[slideIndex5-1].id == "w1") {
+        document.getElementById("w1").style.opacity = 1
+        document.getElementById("w2").style.opacity = 0.6
+        document.getElementById("w3").style.opacity = 0.6
+        document.getElementById("w4").style.opacity = 0.6
+        document.getElementById("w5").style.opacity = 0.6
+        document.getElementById("w6").style.opacity = 0.6;
+    }
+    else if (dots5[slideIndex5-1].id == "w2") {
+        document.getElementById("w1").style.opacity = 0.6
+        document.getElementById("w2").style.opacity = 1
+        document.getElementById("w3").style.opacity = 0.6
+        document.getElementById("w4").style.opacity = 0.6
+        document.getElementById("w5").style.opacity = 0.6
+        document.getElementById("w6").style.opacity = 0.6;
+    }
+    else if (dots5[slideIndex5-1].id == "w3") {
+        document.getElementById("w1").style.opacity = 0.6
+        document.getElementById("w2").style.opacity = 0.6
+        document.getElementById("w3").style.opacity = 1
+        document.getElementById("w4").style.opacity = 0.6
+        document.getElementById("w5").style.opacity = 0.6
+        document.getElementById("w6").style.opacity = 0.6;
+    }
+    else if (dots5[slideIndex5-1].id == "w4") {
+        document.getElementById("w1").style.opacity = 0.6
+        document.getElementById("w2").style.opacity = 0.6
+        document.getElementById("w3").style.opacity = 0.6
+        document.getElementById("w4").style.opacity = 1
+        document.getElementById("w5").style.opacity = 0.6
+        document.getElementById("w6").style.opacity = 0.6;
+    }
+    else if (dots5[slideIndex5-1].id == "w5") {
+        document.getElementById("w1").style.opacity = 0.6
+        document.getElementById("w2").style.opacity = 0.6
+        document.getElementById("w3").style.opacity = 0.6
+        document.getElementById("w4").style.opacity = 0.6
+        document.getElementById("w5").style.opacity = 1
+        document.getElementById("w6").style.opacity = 0.6;
+    }
+    else {
+        document.getElementById("w1").style.opacity = 0.6
+        document.getElementById("w2").style.opacity = 0.6
+        document.getElementById("w3").style.opacity = 0.6
+        document.getElementById("w4").style.opacity = 0.6
+        document.getElementById("w5").style.opacity = 0.6
+        document.getElementById("w6").style.opacity = 1;
+    }
+  slides5[slideIndex5-1].style.display = "block";
+}
+
