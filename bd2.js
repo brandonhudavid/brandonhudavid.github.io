@@ -218,3 +218,21 @@ function currentSlide(modal, n) {
     }
 }
 
+function scrollsoft(elem) {
+    document.getElementById(elem).scrollIntoView();
+    document.getElementById("box-software").scrollTop -= 50;
+}
+
+function scrolldesign(elem) {
+    document.getElementById(elem).scrollIntoView();
+    document.getElementById("box-design").scrollTop -= 50;
+}
+
+function scrollsoftend(elem) {
+    document.getElementById("box-software").scrollTop = 10000;
+}
+
+function scrolldesignend(elem) {
+    document.getElementById("box-design").scrollTop = 10000;
+}
+

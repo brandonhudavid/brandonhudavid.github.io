@@ -25,7 +25,12 @@
         </div>
         <div id="box-design" class="box">
             <h1 style="padding-top: 3vw; color: #012f5a;">DESIGN</h1>
-            <div class="panelh" style="color: #012f5a;">Yelp Mock Redesign (WIP)</div>
+            <div class="navproj navdesign">
+                <div class="projecttext" onclick="scrolldesign('yelp')">Yelp</div>
+                <div class="projecttext" onclick="scrolldesign('tedx')">TEDxWhitneyHigh</div>
+                <div class="projecttext" onclick="scrolldesignend('whs')">Whitney HS</div>
+            </div>
+            <div id="yelp" class="panelh" style="color: #012f5a;">Yelp Mock Redesign (WIP)</div>
             <br>
             <p style="padding-left: 4vw; margin-top: -0.5vw;">
                 Yelp mobile app mock redesign. More thorough write-ups for subsections coming soon.
@@ -44,6 +49,7 @@
             <div id="myModal3" class="modal">
                 <span class="close cursor" onclick="closeModal('myModal3')">&times;</span>
                 <!-- content -->
+                <h2>Click image to enlarge</h2>
                 <div class="modal-content">
                     <div class="mySlides3">
                         <a href="img/yelp1.png" target="_blank"><img src="img/yelp1.png" alt="2"></a>
@@ -65,7 +71,7 @@
               </div>
             </div>
             
-            <div class="panelh" style="color: #012f5a;">TEDxWhitneyHigh</div>
+            <div id="tedx" class="panelh" style="color: #012f5a;">TEDxWhitneyHigh</div>
             <br>
             <p style="padding-left: 4vw; margin-top: -0.5vw;">
                 TEDxWhitneyHigh is an annual TEDxYouth conference held at Whitney High School. From 9th to 12th grade, I served as the Digital Publicity Head, in which I established TEDxWhitneyHigh branding on tickets and merchandise, managed digital and social media publicity, and designed a program booklet for speakers’ portraits and biographies.
@@ -96,6 +102,7 @@
             <div id="myModal4" class="modal">
                 <span class="close cursor" onclick="closeModal('myModal4')">&times;</span>
                 <!-- content -->
+                <h2>Click image to enlarge</h2>
                 <div class="modal-content">
                     <div class="mySlides4">
                         <a href="img/tedx2.png" target="_blank"><img src="img/tedx2.png" alt="tedx"></a>
@@ -141,10 +148,10 @@
               </div>
             </div>
                 
-            <div class="panelh" style="color: #012f5a;">Whitney High School</div>
+            <div id="whs" class="panelh" style="color: #012f5a;">Whitney High School</div>
             <br>
             <p style="padding-left: 4vw; margin-top: -0.5vw;">
-                I have worked on many design projects for Whitney High School administration and school clubs, including:<br> official Whitney High School brochures, Talent Show 2017 shirts, Film Festival social media publicity, Whitney Summer Academy 2017 brochures, Whitney Volleyball yearbook ad and shirt design, and WHS Robotics polo design.
+                I have worked on many design projects for Whitney High School administration and school clubs, including:<br> Official Whitney High School brochures, Talent Show 2017 shirts, Film Festival social media publicity, Whitney Summer Academy 2017 brochures, Whitney Volleyball yearbook ad and shirt design, and WHS Robotics polo design.
             </p>
             <!-- WHS modal -->
             <!-- display -->
@@ -172,6 +179,7 @@
             <div id="myModal5" class="modal">
                 <span class="close cursor" onclick="closeModal('myModal5')">&times;</span>
                 <!-- content -->
+                <h2>Click image to enlarge</h2>
                 <div class="modal-content">
                     <div class="mySlides5">
                         <a href="img/whs1.png" target="_blank"><img src="img/whs1.png" alt="whs"></a>
@@ -224,9 +232,14 @@
         
         <!-- software -->
         <div id="box-software" class="box">
-            <h1 style="padding-top: 3vw; color: #5a010e;">PROGRAMMING AND DEVELOPMENT</h1>
-            <div class="panelh" style="color: #5a010e">
-                This website!
+            <h1 style="padding-top: 1vw; color: #5a010e;">PROGRAMMING AND DEVELOPMENT</h1>
+            <div class="navproj navsoftware">
+                <div class="projecttext" onclick="scrollsoft('website')">Website</div>
+                <div class="projecttext" onclick="scrollsoft('imagecolorsort')">ImageColorSort</div>
+                <div class="projecttext" onclick="scrollsoftend('robotics')">Robotics</div>
+            </div>
+            <div id="website" class="panelh" style="color: #5a010e">
+                This Website!
             </div>
             <a href="https://github.com/brandonhudavid/brandonhudavid.github.io" target="_blank">
                 <h2>
@@ -237,7 +250,7 @@
             <p style="padding-left: 4vw; margin-top: -0.5vw;">
                 Written in HTML, CSS, and JavaScript. Graphics made with Adobe Photoshop.
             </p>
-            <div class="panelh" style="color: #5a010e">ImageColorSort</div>
+            <div id="imagecolorsort" class="panelh" style="color: #5a010e">ImageColorSort</div>
             <a href="https://github.com/brandonhudavid/ImageColorSort" target="_blank">
                 <h2>
                     ( https://github.com/brandonhudavid/ImageColorSort )
@@ -263,7 +276,8 @@
             <!-- modal -->
             <div id="myModal" class="modal">
                 <span class="close cursor" onclick="closeModal('myModal')">&times;</span>
-                <!-- content -->    
+                <!-- content -->  
+                <h2>Click image to enlarge</h2>
                 <div class="modal-content">
                     <div class="mySlides">
                         <a href="img/ics1.png" target="_blank"><img src="img/ics1.png" alt="ics1"></a>
@@ -289,9 +303,9 @@
                         </div>
                     </div>
                 </div>
-            </div>    
+            </div>
             
-            <div class="panelh" style="color: #5a010e">Team 542 WHS Robotics</div>
+            <div id="robotics" class="panelh" style="color: #5a010e">Team 542 WHS Robotics</div>
             <a href="https://github.com/brandonhudavid/nothing-but-net" target="_blank">
                 <h2>
                     ( VEX: https://github.com/brandonhudavid/nothing-but-net )
@@ -329,6 +343,7 @@
             <div id="myModal2" class="modal">
                 <span class="close cursor" onclick="closeModal('myModal2')">&times;</span>
                 <!-- content -->
+                <h2>Click image to enlarge</h2>
                 <div class="modal-content">
                     <div class="mySlides2">
                         <a href="img/robo1.PNG" target="_blank"><img src="img/robo1.PNG" alt="robo1"></a>
