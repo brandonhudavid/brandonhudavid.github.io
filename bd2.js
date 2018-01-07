@@ -142,13 +142,21 @@ function currentSlide(modal, n) {
         for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";
         }
-        document.getElementById("9").style.opacity = 0.6
-        document.getElementById("10").style.opacity = 0.6
-        if (dots[n-1].id == "9") {
-            document.getElementById("9").style.opacity = 1;
+        document.getElementById("y1").style.opacity = 0.6
+        document.getElementById("y2").style.opacity = 0.6
+        document.getElementById("y3").style.opacity = 0.6
+        document.getElementById("y4").style.opacity = 0.6
+        if (dots[n-1].id == "y1") {
+            document.getElementById("y1").style.opacity = 1;
+        }
+        else if (dots[n-1].id == "y2"){
+            document.getElementById("y2").style.opacity = 1;
+        }
+        else if (dots[n-1].id == "y3"){
+            document.getElementById("y3").style.opacity = 1;
         }
         else {
-            document.getElementById("10").style.opacity = 1;
+            document.getElementById("y4").style.opacity = 1;
         }
         slides[n-1].style.display = "block";
     }
