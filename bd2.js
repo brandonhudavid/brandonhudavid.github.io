@@ -81,7 +81,8 @@ document.onkeydown = function(evt) {
         closeModal('myModal2')
         closeModal('myModal3')
         closeModal('myModal4')
-        closeModal('myModal5');
+        closeModal('myModal5')
+        closeModal('myModal6');
     }
 }
 
@@ -111,7 +112,6 @@ function currentSlide(modal, n) {
             document.getElementById("2").style.opacity = 1;}
         else {
             document.getElementById("3").style.opacity = 1;}
-        slides[n-1].style.display = "block";
     }
     else if (modal == 'myModal2') {
         var slides = document.getElementsByClassName("mySlides2");
@@ -134,7 +134,6 @@ function currentSlide(modal, n) {
             document.getElementById("7").style.opacity = 1;}
         else {
             document.getElementById("8").style.opacity = 1;}
-        slides[n-1].style.display = "block";
     }
     else if (modal == 'myModal3') {
         var slides = document.getElementsByClassName("mySlides3");
@@ -158,7 +157,6 @@ function currentSlide(modal, n) {
         else {
             document.getElementById("y4").style.opacity = 1;
         }
-        slides[n-1].style.display = "block";
     }
     else if (modal == 'myModal4') {
         var slides = document.getElementsByClassName("mySlides4");
@@ -190,7 +188,6 @@ function currentSlide(modal, n) {
         else {
             document.getElementById("t6").style.opacity = 1;
         }
-        slides[n-1].style.display = "block";
     }
     else if (modal == 'myModal5') {
         var slides = document.getElementsByClassName("mySlides5");
@@ -222,8 +219,31 @@ function currentSlide(modal, n) {
         else {
             document.getElementById("w6").style.opacity = 1;
         }
-        slides[n-1].style.display = "block";
     }
+    else if (modal == 'myModal6') {
+        var slides = document.getElementsByClassName("mySlides6");
+        var dots = document.getElementsByClassName("demo6");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        document.getElementById("ucla1").style.opacity = 0.6
+        document.getElementById("ucla2").style.opacity = 0.6
+        document.getElementById("ucla3").style.opacity = 0.6
+        document.getElementById("ucla4").style.opacity = 0.6
+        if (dots[n-1].id == "ucla1") {
+            document.getElementById("ucla1").style.opacity = 1;
+        }
+        else if (dots[n-1].id == "ucla2"){
+            document.getElementById("ucla2").style.opacity = 1;
+        }
+        else if (dots[n-1].id == "ucla3"){
+            document.getElementById("ucla3").style.opacity = 1;
+        }
+        else {
+            document.getElementById("ucla4").style.opacity = 1;
+        }
+    }
+    slides[n-1].style.display = "block";
 }
 
 function scrollsoft(elem) {
