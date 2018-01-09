@@ -145,6 +145,10 @@ function currentSlide(modal, n) {
         document.getElementById("y2").style.opacity = 0.6
         document.getElementById("y3").style.opacity = 0.6
         document.getElementById("y4").style.opacity = 0.6
+        document.getElementById("y5").style.opacity = 0.6
+        document.getElementById("y6").style.opacity = 0.6
+        document.getElementById("y7").style.opacity = 0.6
+        document.getElementById("y8").style.opacity = 0.6
         if (dots[n-1].id == "y1") {
             document.getElementById("y1").style.opacity = 1;
         }
@@ -154,8 +158,20 @@ function currentSlide(modal, n) {
         else if (dots[n-1].id == "y3"){
             document.getElementById("y3").style.opacity = 1;
         }
-        else {
+        else if (dots[n-1].id == "y4"){
             document.getElementById("y4").style.opacity = 1;
+        }
+        else if (dots[n-1].id == "y5"){
+            document.getElementById("y5").style.opacity = 1;
+        }
+        else if (dots[n-1].id == "y6"){
+            document.getElementById("y6").style.opacity = 1;
+        }
+        else if (dots[n-1].id == "y7"){
+            document.getElementById("y7").style.opacity = 1;
+        }
+        else if (dots[n-1].id == "y8"){
+            document.getElementById("y8").style.opacity = 1;
         }
     }
     else if (modal == 'myModal4') {
