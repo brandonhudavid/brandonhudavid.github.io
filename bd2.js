@@ -82,7 +82,8 @@ document.onkeydown = function(evt) {
         closeModal('myModal3')
         closeModal('myModal4')
         closeModal('myModal5')
-        closeModal('myModal6');
+        closeModal('myModal6')
+        closeModal('myModal7');
     }
 }
 
@@ -257,6 +258,33 @@ function currentSlide(modal, n) {
         }
         else {
             document.getElementById("ucla4").style.opacity = 1;
+        }
+    }
+    else if (modal == 'myModal7') {
+        var slides = document.getElementsByClassName("mySlides7");
+        var dots = document.getElementsByClassName("demo7");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        document.getElementById("od1").style.opacity = 0.6
+        document.getElementById("od2").style.opacity = 0.6
+        document.getElementById("od3").style.opacity = 0.6
+        document.getElementById("od4").style.opacity = 0.6
+        document.getElementById("od5").style.opacity = 0.6
+        if (dots[n-1].id == "od1") {
+            document.getElementById("od1").style.opacity = 1;
+        }
+        else if (dots[n-1].id == "od2"){
+            document.getElementById("od2").style.opacity = 1;
+        }
+        else if (dots[n-1].id == "od3"){
+            document.getElementById("od3").style.opacity = 1;
+        }
+        else if (dots[n-1].id == "od4"){
+            document.getElementById("od4").style.opacity = 1;
+        }
+        else {
+            document.getElementById("od5").style.opacity = 1;
         }
     }
     slides[n-1].style.display = "block";

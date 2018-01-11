@@ -37,7 +37,8 @@
             <div class="navproj navdesign">
                 <div class="projecttext" onclick="scrolldesign('yelp')">Yelp</div>
                 <div class="projecttext" onclick="scrolldesign('tedx')">TEDxWhitneyHigh</div>
-                <div class="projecttext" onclick="scrolldesignend('whs')">Whitney HS</div>
+                <div class="projecttext" onclick="scrolldesign('whs')">Whitney HS</div>
+                <div class="projecttext" onclick="scrolldesignend('other')">Other</div>
             </div>
             <div id="yelp" class="panelh" style="color: #012f5a;">Yelp Mock Redesign</div>
             <br>
@@ -285,9 +286,77 @@
                       <img id="w6" class="demo5 cursor" src="img/whs6.png" onclick="currentSlide('myModal5', 6)" alt="whs">
                     </div>
                 </div>
-              </div>
+              </div>    
             </div>
             
+            <div id="other" class="panelh" style="color: #012f5a">Other Design Projects</div>
+            <br>
+            <p style="padding-left: 4vw; margin-top: -0.5vw;">
+                A collection of past design projects and personal works.
+            </p>
+            <!-- Other Designs modal -->
+            <!-- display -->
+            <div class="row">
+                <div class="modalcol cursor">
+                    <img src="img/bdla.png" onclick="openModal('myModal7');currentSlide('myModal7', 1)" class="hover-shadow2">
+                </div>
+                <div class="modalcol cursor">
+                    <img src="img/dog.png" onclick="openModal('myModal7');currentSlide('myModal7', 2)" class="hover-shadow2">
+                </div>
+                <div class="modalcol cursor">
+                    <img src="img/four.png" onclick="openModal('myModal7');currentSlide('myModal7', 3)" class="hover-shadow2">
+                </div>
+                <div class="modalcol cursor">
+                    <img src="img/pfleider.png" onclick="openModal('myModal7');currentSlide('myModal7', 4)" class="hover-shadow2">
+                </div>
+                <div class="modalcol cursor">
+                    <img src="img/keyclub.png" onclick="openModal('myModal7');currentSlide('myModal7', 5)" class="hover-shadow2">
+                </div>
+            </div>
+            <!-- modal -->
+            <div id="myModal7" class="modal">
+                <span class="close cursor" onclick="closeModal('myModal7')">&times;</span>
+                <!-- content -->
+                <h2>Click image to<br>open in a new tab</h2>
+                <div class="modal-content">
+                    <div class="mySlides7">
+                        <a href="img/bdla.png" target="_blank"><img src="img/bdla.png" alt="bdla"></a>
+                    </div>
+                    <div class="mySlides7">
+                        <a href="img/dog.png" target="_blank"><img src="img/dog.png" alt="dog"></a>
+                    </div>
+                    <div class="mySlides7">
+                        <a href="img/four.png" target="_blank"><img src="img/four.png" alt="four"></a>
+                    </div>
+                    <div class="mySlides7">
+                        <a href="img/pfleider.png" target="_blank"><img src="img/pfleider.png" alt="pfleider"></a>
+                    </div>
+                    <div class="mySlides7">
+                        <a href="img/keyclub.png" target="_blank"><img src="img/keyclub.png" alt="keyclub"></a>
+                    </div>
+                <!-- block -->
+                <div class="caption-container"></div>
+                <!-- thumbnails -->
+                <div class="thumbnail">
+                    <div class="thumbcol">
+                      <img id="od1" class="demo7 cursor" src="img/bdla.png" onclick="currentSlide('myModal7', 1)" alt="bdla">
+                    </div>
+                    <div class="thumbcol">
+                      <img id="od2" class="demo7 cursor" src="img/dog.png" onclick="currentSlide('myModal7', 2)" alt="dog">
+                    </div>
+                    <div class="thumbcol">
+                      <img id="od3" class="demo7 cursor" src="img/four.png" onclick="currentSlide('myModal7', 3)" alt="four">
+                    </div>
+                    <div class="thumbcol">
+                      <img id="od4" class="demo7 cursor" src="img/pfleider.png" onclick="currentSlide('myModal7', 4)" alt="pfleider">
+                    </div>
+                    <div class="thumbcol">
+                      <img id="od5" class="demo7 cursor" src="img/keyclub.png" onclick="currentSlide('myModal7', 5)" alt="keyclub">
+                    </div>
+                </div>
+              </div>
+            </div>
+                  
         </div>
     
         <!-- software -->
