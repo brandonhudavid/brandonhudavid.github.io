@@ -37,6 +37,17 @@ p {
     color: black;
 }
 
+li {
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 2vw;
+    padding-right: 2.2vw;
+    font-weight: 400;
+    font-size: 1.2vw;
+    text-align: justify;
+    color: black;
+    list-style-position: inside;
+}
+
 a {
     text-decoration: none;
     transition: 0.3s ease;
