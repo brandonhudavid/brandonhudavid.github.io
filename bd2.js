@@ -271,6 +271,8 @@ function currentSlide(modal, n) {
         document.getElementById("od3").style.opacity = 0.6
         document.getElementById("od4").style.opacity = 0.6
         document.getElementById("od5").style.opacity = 0.6
+        document.getElementById("od5").style.opacity = 0.6
+        document.getElementById("od6").style.opacity = 0.6
         if (dots[n-1].id == "od1") {
             document.getElementById("od1").style.opacity = 1;
         }
@@ -283,8 +285,11 @@ function currentSlide(modal, n) {
         else if (dots[n-1].id == "od4"){
             document.getElementById("od4").style.opacity = 1;
         }
-        else {
+        else if (dots[n-1].id == "od5"){
             document.getElementById("od5").style.opacity = 1;
+        }
+        else {
+            document.getElementById("od6").style.opacity = 1;
         }
     }
     slides[n-1].style.display = "block";
