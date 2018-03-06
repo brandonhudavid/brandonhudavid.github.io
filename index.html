@@ -36,11 +36,17 @@
         <div id="box-design" class="box">
             <h1 style="padding-top: 3vw; color: #012f5a;">DESIGN</h1>
             <div class="navproj navdesign">
+                <div class="projecttext" onclick="scrolldesign('pantry')">Food Pantry</div>
                 <div class="projecttext" onclick="scrolldesign('yelp')">Yelp</div>
-                <div class="projecttext" onclick="scrolldesign('tedx')">TEDxWhitneyHigh</div>
                 <div class="projecttext" onclick="scrolldesign('whs')">Whitney HS</div>
+                <div class="projecttext" onclick="scrolldesign('tedx')">TEDxWhitneyHigh</div>
                 <div class="projecttext" onclick="scrolldesignend('other')">Other</div>
             </div>
+            <div id="pantry" class="panelh" style="color: #012f5a;">UC Berkeley Food Pantry Concept (WIP)</div>
+            <br>
+            <p style="padding-left: 4vw; margin-top: -0.5vw;">
+                A mobile app concept that encourages under-resourced UC Berkeley students to visit the Food Pantry twice every month. Updates coming soon!
+            </p>
             <div id="yelp" class="panelh" style="color: #012f5a;">Yelp Mock Redesign</div>
             <br>
             <p style="padding-left: 4vw; margin-top: -0.5vw;">
@@ -135,83 +141,6 @@
                 </div>
               </div>
             </div>
-            
-            <div id="tedx" class="panelh" style="color: #012f5a;">TEDxWhitneyHigh</div>
-            <br>
-            <p style="padding-left: 4vw; margin-top: -0.5vw;">
-                TEDxWhitneyHigh is an annual TEDxYouth conference held at Whitney High School. In 9th grade, I helped coordinate the first TEDxWhitneyHigh event. From 9th grade throughout my high school career, I served as the Digital Publicity Head, in which I established TEDxWhitneyHigh branding on tickets and merchandise, managed digital and social media publicity, and designed a program booklet for speakers’ portraits and biographies.
-            </p>
-            <!-- TEDx modal -->
-            <!-- display -->
-            <div class="row">
-                <div class="modalcol cursor">
-                    <img src="img/tedx2.png" onclick="openModal('myModal4');currentSlide('myModal4', 1)" class="hover-shadow2">
-                </div>
-                <div class="modalcol cursor">
-                    <img src="img/tedx3.png" onclick="openModal('myModal4');currentSlide('myModal4', 2)" class="hover-shadow2">
-                </div>
-                <div class="modalcol cursor">
-                    <img src="img/tedx4.png" onclick="openModal('myModal4');currentSlide('myModal4', 3)" class="hover-shadow2">
-                </div>
-                <div class="modalcol cursor">
-                    <img src="img/tedx5.png" onclick="openModal('myModal4');currentSlide('myModal4', 4)" class="hover-shadow2">
-                </div>
-                <div class="modalcol cursor">
-                    <img src="img/tedx6.png" onclick="openModal('myModal4');currentSlide('myModal4', 5)" class="hover-shadow2">
-                </div>
-                <div class="modalcol cursor">
-                    <img src="img/tedx7.png" onclick="openModal('myModal4');currentSlide('myModal4', 6)" class="hover-shadow2">
-                </div>
-            </div>
-            <!-- modal -->
-            <div id="myModal4" class="modal">
-                <span class="close cursor" onclick="closeModal('myModal4')">&times;</span>
-                <!-- content -->
-                <h2>Click image to<br>open in a new tab</h2>
-                <div class="modal-content">
-                    <div class="mySlides4">
-                        <a href="img/tedx2.png" target="_blank"><img src="img/tedx2.png" alt="tedx"></a>
-                    </div>
-                    <div class="mySlides4">
-                        <a href="img/tedx3.png" target="_blank"><img src="img/tedx3.png" alt="tedx"></a>
-                    </div>
-                    <div class="mySlides4">
-                        <a href="img/tedx4.png" target="_blank"><img src="img/tedx4.png" alt="tedx"></a>
-                    </div>
-                    <div class="mySlides4">
-                        <a href="img/tedx5.png" target="_blank"><img src="img/tedx5.png" alt="tedx"></a>
-                    </div>
-                    <div class="mySlides4">
-                        <a href="img/tedx6.png" target="_blank"><img src="img/tedx6.png" alt="tedx"></a>
-                    </div>
-                    <div class="mySlides4">
-                        <a href="img/tedx7.png" target="_blank"><img src="img/tedx7.png" alt="tedx"></a>
-                    </div>
-                <!-- block -->
-                <div class="caption-container"></div>
-                <!-- thumbnails -->
-                <div class="thumbnail">
-                    <div class="thumbcol">
-                      <img id="t1" class="demo4 cursor" src="img/tedx2.png" onclick="currentSlide('myModal4', 1)" alt="tedx">
-                    </div>
-                    <div class="thumbcol">
-                      <img id="t2" class="demo4 cursor" src="img/tedx3.png" onclick="currentSlide('myModal4', 2)" alt="tedx">
-                    </div>
-                    <div class="thumbcol">
-                      <img id="t3" class="demo4 cursor" src="img/tedx4.png" onclick="currentSlide('myModal4', 3)" alt="tedx">
-                    </div>
-                    <div class="thumbcol">
-                      <img id="t4" class="demo4 cursor" src="img/tedx5.png" onclick="currentSlide('myModal4', 4)" alt="tedx">
-                    </div>
-                    <div class="thumbcol">
-                      <img id="t5" class="demo4 cursor" src="img/tedx6.png" onclick="currentSlide('myModal4', 5)" alt="tedx">
-                    </div>
-                    <div class="thumbcol">
-                      <img id="t6" class="demo4 cursor" src="img/tedx7.png" onclick="currentSlide('myModal4', 6)" alt="tedx">
-                    </div>
-                </div>
-              </div>
-            </div>
                 
             <div id="whs" class="panelh" style="color: #012f5a;">Whitney High School</div>
             <br>
@@ -296,6 +225,83 @@
                     </div>
                 </div>
               </div>    
+            </div>
+            
+            <div id="tedx" class="panelh" style="color: #012f5a;">TEDxWhitneyHigh</div>
+            <br>
+            <p style="padding-left: 4vw; margin-top: -0.5vw;">
+                TEDxWhitneyHigh is an annual TEDxYouth conference held at Whitney High School. In 9th grade, I helped coordinate the first TEDxWhitneyHigh event. From 9th grade throughout my high school career, I served as the Digital Publicity Head, in which I established TEDxWhitneyHigh branding on tickets and merchandise, managed digital and social media publicity, and designed a program booklet for speakers’ portraits and biographies.
+            </p>
+            <!-- TEDx modal -->
+            <!-- display -->
+            <div class="row">
+                <div class="modalcol cursor">
+                    <img src="img/tedx2.png" onclick="openModal('myModal4');currentSlide('myModal4', 1)" class="hover-shadow2">
+                </div>
+                <div class="modalcol cursor">
+                    <img src="img/tedx3.png" onclick="openModal('myModal4');currentSlide('myModal4', 2)" class="hover-shadow2">
+                </div>
+                <div class="modalcol cursor">
+                    <img src="img/tedx4.png" onclick="openModal('myModal4');currentSlide('myModal4', 3)" class="hover-shadow2">
+                </div>
+                <div class="modalcol cursor">
+                    <img src="img/tedx5.png" onclick="openModal('myModal4');currentSlide('myModal4', 4)" class="hover-shadow2">
+                </div>
+                <div class="modalcol cursor">
+                    <img src="img/tedx6.png" onclick="openModal('myModal4');currentSlide('myModal4', 5)" class="hover-shadow2">
+                </div>
+                <div class="modalcol cursor">
+                    <img src="img/tedx7.png" onclick="openModal('myModal4');currentSlide('myModal4', 6)" class="hover-shadow2">
+                </div>
+            </div>
+            <!-- modal -->
+            <div id="myModal4" class="modal">
+                <span class="close cursor" onclick="closeModal('myModal4')">&times;</span>
+                <!-- content -->
+                <h2>Click image to<br>open in a new tab</h2>
+                <div class="modal-content">
+                    <div class="mySlides4">
+                        <a href="img/tedx2.png" target="_blank"><img src="img/tedx2.png" alt="tedx"></a>
+                    </div>
+                    <div class="mySlides4">
+                        <a href="img/tedx3.png" target="_blank"><img src="img/tedx3.png" alt="tedx"></a>
+                    </div>
+                    <div class="mySlides4">
+                        <a href="img/tedx4.png" target="_blank"><img src="img/tedx4.png" alt="tedx"></a>
+                    </div>
+                    <div class="mySlides4">
+                        <a href="img/tedx5.png" target="_blank"><img src="img/tedx5.png" alt="tedx"></a>
+                    </div>
+                    <div class="mySlides4">
+                        <a href="img/tedx6.png" target="_blank"><img src="img/tedx6.png" alt="tedx"></a>
+                    </div>
+                    <div class="mySlides4">
+                        <a href="img/tedx7.png" target="_blank"><img src="img/tedx7.png" alt="tedx"></a>
+                    </div>
+                <!-- block -->
+                <div class="caption-container"></div>
+                <!-- thumbnails -->
+                <div class="thumbnail">
+                    <div class="thumbcol">
+                      <img id="t1" class="demo4 cursor" src="img/tedx2.png" onclick="currentSlide('myModal4', 1)" alt="tedx">
+                    </div>
+                    <div class="thumbcol">
+                      <img id="t2" class="demo4 cursor" src="img/tedx3.png" onclick="currentSlide('myModal4', 2)" alt="tedx">
+                    </div>
+                    <div class="thumbcol">
+                      <img id="t3" class="demo4 cursor" src="img/tedx4.png" onclick="currentSlide('myModal4', 3)" alt="tedx">
+                    </div>
+                    <div class="thumbcol">
+                      <img id="t4" class="demo4 cursor" src="img/tedx5.png" onclick="currentSlide('myModal4', 4)" alt="tedx">
+                    </div>
+                    <div class="thumbcol">
+                      <img id="t5" class="demo4 cursor" src="img/tedx6.png" onclick="currentSlide('myModal4', 5)" alt="tedx">
+                    </div>
+                    <div class="thumbcol">
+                      <img id="t6" class="demo4 cursor" src="img/tedx7.png" onclick="currentSlide('myModal4', 6)" alt="tedx">
+                    </div>
+                </div>
+              </div>
             </div>
             
             <div id="other" class="panelh" style="color: #012f5a">Other Design Projects</div>
@@ -616,7 +622,7 @@
                 Hi there! My name is Brandon David, an aspiring developer and designer studying Electrical Engineering and Computer Science at UC Berkeley. Additionally, I am a volleyball libero, a contemporary hip hop fan, a casual musician, a streetwear fashion enthusiast, a Stephen Curry bandwagoner, a Stranger Things follower, and a dog lover.
             </p>
             <p style="text-indent: 4vw;">
-                My passion for computer science stems from my involvement in web development projects and robotics. I also have a strong graphic design background, and am currently a UI/UX Designer UC Berkeley's premier design agency, Innovative Design. My ambitions range from growing as a full stack developer and facilitating productivity to becoming the game changer for branding and logo design.
+                My passion for computer science stems from my involvement in web development projects and robotics. I also have a strong graphic design background, and am currently a UI/UX Designer UC Berkeley's premier design agency, Innovative Design. (I will be hosting a workshop on Photo Restoration and Colorization on Saturday, March 17!) My ambitions range from growing as a full stack developer and facilitating productivity to becoming the game changer for branding and logo design.
             </p>
             <p style="text-indent: 4vw;">
                 Above all, I am a creator and a creative that is constantly exploring and diligently working towards creating better things.<br><br>
