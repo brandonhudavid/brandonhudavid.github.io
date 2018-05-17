@@ -416,8 +416,6 @@ innod:hover {
     position: relative;
     display: inline-block;
     margin-top: 2vw;
-    margin-left: 2vw;
-    margin-right: 2vw;
     width: 45%;
 }
 
@@ -494,6 +492,7 @@ justify-content: center;
         border-bottom-color: #f37120;
         border-bottom-width: 0.5vw;
         border-bottom-style:inset;
+        margin-top: 5vw;
     }
     
     portfolio-nav a {
