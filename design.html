@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Design | Brandon David</title>
+        <link rel="shortcut icon" type="image/x-icon" href="css/src/bd_icon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Karla|Overpass:800" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <header>
+            <a id="logo" href=index.html><img class="clickable" src="css/src/bdd_circle.png"></a>
+            <nav>
+                <a class="unselected clickable" href="about.html">About</a>
+                <a class="selected clickable">Portfolio</a>
+            </nav>
+        </header>
+        
+        <portfolio-nav>
+                <a id="folio" class="clickable" href=software.html>SOFTWARE</a>
+                <a id="folio-select">DESIGN</a>
+        </portfolio-nav>
+        
+        <div id="container">
+            <div>
+                <div data-sr="enter bottom move 50px wait 0.2s" class="project-view left">
+                    <div id="habbit" class="text-overlay"><a class="folio-text" href="100days.html">100 DAYS OF DESIGN<br/></a>
+                        <div class="subtext-overlay"><a class="folio-text" href="100days.html">Random design prompts. In progress.</a></div>
+                    </div>
+                    <a href=bottle.html><img src="css/src/bd-quarter.png"></a>
+                </div>
+                <div data-sr="enter bottom move 50px wait 0.25s" class="project-view right">
+                    <div id="bottle" class="text-overlay"><a class="folio-text" href="bottle.html">BOTTLE<br/></a>
+                        <div class="subtext-overlay"><a class="folio-text" href="bottle.html">#MyLastTrash Zero Waste initiative.</a></div>
+                    </div>
+                    <a href=bottle.html><img src="css/src/bottle.png"></a>
+                </div>
+<!--
+                <div data-sr="enter bottom move 50px wait 0.3s" class="project-view left">
+                    <div class="text-overlay">HABBIT<br/>
+                        <div class="subtext-overlay">An iOS app that allows users to track their healthy habits efficiently.</div>
+                    </div>
+                    <a><img src="css/src/habbit/habbit.png"></a>
+                </div>
+-->
+            </div>
+        </div>
+        <script src="js/scrollReveal.js"></script>
+        <script>
+          window.sr = new scrollReveal();
+        </script>
+    </body>
+</html>
