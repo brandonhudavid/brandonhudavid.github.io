@@ -92,7 +92,7 @@ h2 {
     font-weight: 400;
 }
 
-h3 {
+p, h3 {
     font-family: Karla, Helvetica, sans-serif;
     font-size: 1.5vw;
     font-weight: 400;
@@ -555,7 +555,7 @@ justify-content: center;
         font-size: 5vw;
     }
     
-    h3 {
+    p {
         font-family: Karla, Helvetica, sans-serif;
         font-size: 4.75vw;
         font-weight: 400;
