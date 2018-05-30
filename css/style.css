@@ -75,7 +75,7 @@ header a {
 
 h1 {
     font-family: Overpass, Helvetica, sans-serif;
-    font-size: 6vw;
+    font-size: 5vw;
     font-weight: 800;
     line-height: 0;
 }
@@ -93,7 +93,7 @@ subtitle {
 
 h2 {
     font-family: Karla, Helvetica, sans-serif;
-    font-size: 2vw;
+    font-size: 1.75vw;
     font-weight: 400;
 }
 
@@ -255,8 +255,7 @@ portfolio-nav a {
     display: inline-block;
     justify-content: center;
     text-align: center;
-    float: none;
-    
+    float: none; 
 }
 
 .proj-img {
@@ -332,54 +331,6 @@ innod:hover {
     font-family: Karla, Helvetica, sans-serif;
     font-size: 1vw;
     font-weight: 400;
-}
-
-.folio-text {
-    color: white;
-    text-decoration: none;
-}
-
-/*
-#habbit {
-    background-color: rgba(243, 113, 32, 0.75);
-    transition: ease 0.25s;
-    opacity: 0;
-}
-
-#habbit:hover {
-    opacity: 1;
-}
-*/
-
-/*
-#hira {
-    background-color: rgba(240, 199, 63, 0.9);
-    transition: ease 0.25s;
-    opacity: 0;
-}
-
-#hira:hover {
-    opacity: 1;
-}
-*/
-
-/*
-#bottle {
-    background-color: rgba(44, 191, 199, 0.75);
-    transition: ease 0.25s;
-    opacity: 0;
-}
-
-#bottle:hover {
-    opacity: 1;
-}
-*/
-
-.subtext-overlay {
-    font-family: Karla, Helvetica, sans-serif;
-    font-size: 1.75vw;
-    font-weight: 400;
-    color: white;
 }
 
 .project-view img {
@@ -745,56 +696,51 @@ justify-content: center;
     }
     
     .proj-panel-image {
-        opacity: 0.75;
-    }
-    
-    
-    #hundred, #habbit, #bottle, #hira {
         opacity: 1;
-        background-color: transparent;
     }
+    
     
     #bdla {
-        opacity: 0.5;
-        background-color: black;
+        opacity: 1;
+        background-color: rgba(0,0,0,0.65);
     }
     
-    .bdla-panel:hover #bdla {
-      opacity: 0.5;
+    #bottle {
+        opacity: 1;
+        background-color: rgba(44, 191, 199, 0.5);
+    }
+    
+    #habbit {
+        opacity: 1;
+        background-color: rgba(243, 113, 32, 0.65);
+    }
+    
+    #hira {
+        opacity: 1;
+        background-color: rgba(240, 199, 63, 0.75);
+    }
+    
+    .bdla-panel:hover #bdla, .proj-panel:hover #bottle {
+      opacity: 1;
     }
     
     #hundred .proj-text, #habbit .proj-text {
         color: #f37120;
     }
     
-    #bottle .proj-text {
-        color: rgba(44, 191, 199, 1);
-    }
-    
-    #hira .proj-text {
-        color: rgba(240, 199, 63, 1);
-    }
-    
-    #bdla .proj-text {
+    #bottle .proj-text, #habbit .proj-text, #bdla .proj-text, #hira .proj-text {
         color: white;
     }
     
+    
     .proj-panel #bdla {
-        opacity: 0.75;
+        opacity: 1;
     }
     
     .proj-panel:hover #bdla {
-        opacity: 0.75;
+        opacity: 1;
     }
     
-    
-    .text-overlay {
-        background-color: rgba(255, 255, 255, 0.9);
-    }
-    
-    #bdla .text-overlay {
-        background-color: black;
-    }
     
     .coded-by-container {
     display: block;
