@@ -120,6 +120,7 @@ p, h3 {
 
 orange {
     color: #f37120;
+    font-weight: 700;
 }
 
 yellow {
@@ -175,6 +176,7 @@ portfolio-nav a {
     color: #f37120;
     transition: ease 0.25s;
     display: inline-block;
+    font-weight: 700;
 }
 
 #hi-orange:hover {
@@ -186,6 +188,7 @@ portfolio-nav a {
     color: rgba(240, 199, 63, 1);
     transition: ease 0.25s;
     display: inline-block;
+    font-weight: 700;
 }
 
 .hi-yellow:hover {
@@ -197,6 +200,7 @@ portfolio-nav a {
     color: rgba(44, 191, 199, 1);
     transition: ease 0.25s;
     display: inline-block;
+    font-weight: 700;
 }
 
 .hi-blue:hover {
@@ -208,6 +212,7 @@ portfolio-nav a {
     color: black;
     transition: ease 0.25s;
     display: inline-block;
+    font-weight: 700;
 }
 
 #hi-black:hover {
@@ -288,6 +293,7 @@ portfolio-nav a {
 
 berkeley {
     color: navy;
+    font-weight: 700;
     transition: ease 0.25s;
 }
 
@@ -299,6 +305,7 @@ berkeley:hover {
 
 innod {
     color: #1b93c0;
+    font-weight: 700;
     transition: ease 0.25s;
 }
 
