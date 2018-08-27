@@ -7,8 +7,8 @@ body {
     height: 100%;
     margin: auto;
     background-image: url(src/bd-quarter.png);
-    background-size: 100%;
     background-repeat: no-repeat;
+    background-size: 100%;
     color: #414141;
 }
 
@@ -233,7 +233,7 @@ portfolio-nav a {
 }
 
 .hi-here {
-    color: rgba(72, 218, 208, 1);
+    color: rgba(0, 175, 170, 1);
     transition: ease 0.25s;
     display: inline-block;
     font-weight: 700;
@@ -241,7 +241,7 @@ portfolio-nav a {
 
 .hi-here:hover {
     color: white;
-    background-color: rgba(72, 218, 208, 1);
+    background-color: rgba(0, 175, 170, 1);
 }
 
 #corporate {
@@ -462,7 +462,7 @@ innod:hover {
     width: 45%;
 }
 
-.proj-panel-image, .bdla-panel-image {
+.proj-panel-image, .bdla-panel-image, .whitney-panel-image, .here-panel-image {
   display: block;
   width: 100%;
   height: auto;
@@ -485,7 +485,7 @@ innod:hover {
 }
 
 #here {
-    background-color: rgba(72, 218, 208, 0.75);
+    background-color: rgba(0, 175, 170, 0.9);
 }
 
 #bottle {
@@ -515,12 +515,20 @@ innod:hover {
 }
 
 
-.proj-panel:hover #hundred, .proj-panel:hover #bottle, .proj-panel:hover #habbit, .proj-panel:hover #hira, .proj-panel:hover #bdla, .proj-panel:hover #here, .proj-panel:hover #innod, .proj-panel:hover #whitney {
+.proj-panel:hover #hundred, .proj-panel:hover #bottle, .proj-panel:hover #habbit, .proj-panel:hover #hira, .proj-panel:hover #bdla, .proj-panel:hover #here, .proj-panel:hover #innod, .proj-panel:hover #whitney, .proj-panel:hover #here {
   opacity: 1;
 }
 
 .bdla-panel:hover #bdla  {
   opacity: 1;
+}
+
+.half-panel:hover #whitney  {
+    opacity: 1;
+}
+
+.half-panel:hover #here  {
+    opacity: 1;
 }
 
 .proj-text {
@@ -556,6 +564,13 @@ justify-content: center;
     width: 30%;
 }
 
+.half-panel {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    width: 40%;
+}
+
 
 @media (orientation: portrait) {
     
@@ -563,7 +578,6 @@ justify-content: center;
     body {
         width: 90%;
         background-image: url(src/bd-square.png);
-        background-repeat: repeat-y;
     }
     
     
@@ -752,7 +766,7 @@ justify-content: center;
         width: 90%;
     }
     
-    .bdla-panel {
+    .bdla-panel, .half-panel {
         margin: auto;
         float: none;
         display: inline-block;
@@ -768,12 +782,12 @@ justify-content: center;
     
     #bdla {
         opacity: 1;
-        background-color: rgba(0,0,0,0.65);
+        background-color: rgba(0,0,0,0.75);
     }
     
     #bottle {
         opacity: 1;
-        background-color: rgba(44, 191, 199, 0.5);
+        background-color: rgba(44, 191, 199, 0.75);
     }
     
     #habbit {
@@ -783,22 +797,17 @@ justify-content: center;
 
     #here {
         opacity: 1;
-        background-color: rgba(72, 218, 208, 0.75);
+        background-color: rgba(0, 175, 170, 0.85);
     }
     
     #hira, #whitney {
         opacity: 1;
-        background-color: rgba(240, 199, 63, 0.75);
+        background-color: rgba(240, 199, 63, 0.9);
     }
 
     #innod {
         opacity: 1;
-        background-color: rgba(27,147,192,0.65);
-    }
-
-    #whitney {
-        opacity: 1;
-        background-color: rgba(254, 223, 17, 0.65);
+        background-color: rgba(27,147,192,0.8);
     }
     
     .bdla-panel:hover #bdla, .proj-panel:hover #bottle {
