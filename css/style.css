@@ -571,6 +571,16 @@ justify-content: center;
     width: 40%;
 }
 
+.tedx {
+    position: relative;
+    /* display: inline-block; */
+    margin-bottom: 1vw;
+    width: 45%;
+}
+
+.proj-below {
+    margin-bottom: 21vw;
+}
 
 @media (orientation: portrait) {
     
@@ -830,5 +840,9 @@ justify-content: center;
     
     #bdla-header {
         width: 100%;
+    }
+
+    .proj-below {
+        margin-bottom: 0;
     }
 }
