@@ -527,7 +527,7 @@ innod:hover {
     opacity: 1;
 }
 
-.half-panel:hover #here  {
+.half-panel:hover #here, .full-panel:hover #here  {
     opacity: 1;
 }
 
@@ -569,6 +569,13 @@ justify-content: center;
     display: inline-block;
     margin: auto;
     width: 40%;
+}
+
+.full-panel {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    width: 80%;
 }
 
 .tedx {
@@ -776,7 +783,7 @@ justify-content: center;
         width: 90%;
     }
     
-    .bdla-panel, .half-panel {
+    .bdla-panel, .half-panel, .full-panel {
         margin: auto;
         float: none;
         display: inline-block;
