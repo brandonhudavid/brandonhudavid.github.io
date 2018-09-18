@@ -284,6 +284,15 @@ portfolio-nav a {
     margin-left: 20%;
 }
 
+.scope {
+    float: left;
+    text-align: left;
+    color: #414141;
+    margin-right: 50%;
+    padding-left: 1%;
+    border-left: 4px solid #414141;
+}
+
 .proj-collection {
     width: 100%;
     display: inline-block;
@@ -655,6 +664,10 @@ justify-content: center;
         float: none;
         text-align: center;
         margin-left: 0;
+        margin-right: 0;
+    }
+
+    .scope {
         margin-right: 0;
     }
     
