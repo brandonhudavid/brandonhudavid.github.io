@@ -270,6 +270,13 @@ portfolio-nav a {
     margin-left: 40%;
 }
 
+.first-blurb {
+    float: right;
+    text-align: right;
+    color: #414141;
+    margin-left: 37.8%;
+}
+
 .project-blurbs {
     float: left;
     text-align: left;
@@ -350,6 +357,30 @@ innod {
 innod:hover {
     color: white;
     background-color: #1b93c0;
+}
+
+.hi-innod {
+    color: #1b93c0;
+    transition: ease 0.25s;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.hi-innod:hover {
+    color: white;
+    background-color: #1b93c0;
+}
+
+.hi-mdb {
+    color: #58c0ff;
+    transition: ease 0.25s;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.hi-mdb:hover {
+    color: white;
+    background-color: #58c0ff;
 }
 
 .project-view {
