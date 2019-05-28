@@ -12,10 +12,16 @@ body {
     color: #414141;
 }
 
+
 #container, #proj-container, .coded-by-container {
     float: none;
     width: 100%;
     padding-bottom: 15%;
+}
+
+#container-new {
+    float: right;
+    width: 60%;
 }
 
 .center-container {
@@ -262,12 +268,10 @@ portfolio-nav a {
     text-decoration: none;
 }
 
-
 .blurbs {
     float: right;
     text-align: right;
     color: #414141;
-    margin-left: 40%;
 }
 
 .first-blurb {
@@ -336,17 +340,31 @@ portfolio-nav a {
     opacity: 1;
 }
 
-berkeley {
+.berkeley {
     color: navy;
-    font-weight: 700;
     transition: ease 0.25s;
+    display: inline-block;
+    font-weight: 700;
 }
 
-berkeley:hover {
+.berkeley:hover {
     color: white;
     background-color: navy;
-    
 }
+
+.optimizely {
+    color: #0037fe;
+    transition: ease 0.25s;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.optimizely:hover {
+    color: white;
+    background-color: #0037fe;
+}
+
+
 
 innod {
     color: #1b93c0;
@@ -634,7 +652,22 @@ justify-content: center;
     margin-bottom: 21vw;
 }
 
+.brandon {
+    display: inline-block;
+    width: 25%;
+}
+
 @media (orientation: portrait) {
+
+    .brandon {
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+
+    #container-new {
+        width: 100%;
+    }
     
     
     body {
