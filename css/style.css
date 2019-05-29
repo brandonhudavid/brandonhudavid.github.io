@@ -551,12 +551,24 @@ innod:hover {
     background-color: rgba(0, 175, 170, 0.9);
 }
 
+#engage {
+    background-color: rgba(58, 132, 195, 0.8);
+}
+
+#optimizely {
+    background-color: rgba(0, 65, 245, 0.8);
+}
+
 #bottle {
     background-color: rgba(44, 191, 199, 0.75);
 }
 
 #hira, #whitney {
     background-color: rgba(240, 199, 63, 0.9);
+}
+
+#ford {
+    background-color: rgba(29, 163, 218, 0.9);
 }
 
 #bdla {
@@ -578,7 +590,7 @@ innod:hover {
 }
 
 
-.proj-panel:hover #hundred, .proj-panel:hover #bottle, .proj-panel:hover #habbit, .proj-panel:hover #hira, .proj-panel:hover #bdla, .proj-panel:hover #here, .proj-panel:hover #innod, .proj-panel:hover #whitney, .proj-panel:hover #here {
+.proj-panel:hover #hundred, .proj-panel:hover #bottle, .proj-panel:hover #habbit, .proj-panel:hover #hira, .proj-panel:hover #bdla, .proj-panel:hover #here, .proj-panel:hover #innod, .proj-panel:hover #whitney, .proj-panel:hover #here, .proj-panel:hover #engage, .proj-panel:hover #optimizely, .proj-panel:hover #ford {
   opacity: 1;
 }
 
@@ -891,7 +903,7 @@ justify-content: center;
     
     #habbit {
         opacity: 1;
-        background-color: rgba(243, 113, 32, 0.65);
+        background-color: rgba(243, 113, 32, 0.7);
     }
 
     #here {
@@ -904,9 +916,24 @@ justify-content: center;
         background-color: rgba(240, 199, 63, 0.9);
     }
 
+    #ford {
+        opacity: 1;
+        background-color: rgba(29, 163, 218, 0.);
+    }
+
     #innod {
         opacity: 1;
-        background-color: rgba(27,147,192,0.8);
+        background-color: rgba(27,147,192,0.9);
+    }
+
+    #engage {
+        opacity: 1;
+        background-color: rgba(58, 132, 195, 0.8);
+    }
+
+    #optimizely {
+        opacity: 1;
+        background-color:  rgba(0, 65, 245, 0.75);
     }
     
     .bdla-panel:hover #bdla, .proj-panel:hover #bottle {
