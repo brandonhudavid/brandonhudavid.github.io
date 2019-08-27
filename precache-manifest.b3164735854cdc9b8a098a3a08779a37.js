@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "698a00adbe0176f8d3208007e4ec6939",
+    "revision": "5943b63ca3be21b7da40ebb864bc2b35",
     "url": "/index.html"
   },
   {
-    "revision": "f6125c3ec4bff2542679",
-    "url": "/static/css/main.d8d21457.chunk.css"
+    "revision": "125e54e44e9712874d55",
+    "url": "/static/css/main.d7ee0dd5.chunk.css"
   },
   {
-    "revision": "c70d257c2fcbe2f94769",
-    "url": "/static/js/2.1aea0848.chunk.js"
+    "revision": "603b2c316020d396fb6b",
+    "url": "/static/js/2.33452458.chunk.js"
   },
   {
-    "revision": "f6125c3ec4bff2542679",
-    "url": "/static/js/main.a8524084.chunk.js"
+    "revision": "125e54e44e9712874d55",
+    "url": "/static/js/main.643e161a.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -72,6 +72,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/bdla.54d6892c.png"
   },
   {
+    "revision": "b715d4c46c66105ffefc4b84e7d80d8f",
+    "url": "/static/media/bell-wu.b715d4c4.jpg"
+  },
+  {
     "revision": "3f4bf541f80cf2b3c5a6bbf967c57d99",
     "url": "/static/media/bottle-pic.3f4bf541.jpg"
   },
@@ -102,6 +106,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "00c5fc82d3387efdd6f88a277ddcc034",
     "url": "/static/media/brandonhudavid.00c5fc82.png"
+  },
+  {
+    "revision": "fcf6663c3496a856d0b08e5471b8daf1",
+    "url": "/static/media/chantal-herrera.fcf6663c.jpg"
   },
   {
     "revision": "81a4d043cd447761ac4b6e38c2d50eac",
@@ -138,6 +146,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7f8a33689734637e6eb3ad6ad19a70da",
     "url": "/static/media/engage.7f8a3368.png"
+  },
+  {
+    "revision": "28de872d13d0aec26fe2267537b4665b",
+    "url": "/static/media/eva-chi.28de872d.png"
   },
   {
     "revision": "9f731daaf54b838ebd6220bb62a62fd9",
@@ -304,14 +316,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/innod.87295539.png"
   },
   {
-    "revision": "5df8d9e94d43fd1bb936633f4b5e9da1",
-    "url": "/static/media/ios-off.5df8d9e9.png"
-  },
-  {
-    "revision": "73ca16c828cfbb254f33204d51705578",
-    "url": "/static/media/ios-on.73ca16c8.png"
-  },
-  {
     "revision": "0c47e390c21d6c795c241d8f039fd793",
     "url": "/static/media/logo.0c47e390.png"
   },
@@ -336,7 +340,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/swe-off.75863d93.png"
   },
   {
+    "revision": "e741f4690dfa07ff3e129a0f9fbc6edf",
+    "url": "/static/media/tiffany-tran.e741f469.jpg"
+  },
+  {
+    "revision": "a7467d97ce2243ee3eb9a9931af46202",
+    "url": "/static/media/tiffany-tran2.a7467d97.jpg"
+  },
+  {
     "revision": "259d81753ddc6eb3db4a7f3b7a08b8a1",
     "url": "/static/media/whitney.259d8175.png"
+  },
+  {
+    "revision": "79de78dc3f4fc64a25a407d46939d24e",
+    "url": "/static/media/william-jiang.79de78dc.jpg"
   }
 ]);
