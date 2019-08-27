@@ -1,6 +1,5 @@
 {
   "files": {
-<<<<<<< HEAD
     "main.css": "/static/css/main.d7ee0dd5.chunk.css",
     "main.js": "/static/js/main.643e161a.chunk.js",
     "main.js.map": "/static/js/main.643e161a.chunk.js.map",
@@ -12,19 +11,6 @@
     "precache-manifest.b3164735854cdc9b8a098a3a08779a37.js": "/precache-manifest.b3164735854cdc9b8a098a3a08779a37.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.d7ee0dd5.chunk.css.map": "/static/css/main.d7ee0dd5.chunk.css.map",
-=======
-    "main.css": "/static/css/main.19b02eb3.chunk.css",
-    "main.js": "/static/js/main.f3809c21.chunk.js",
-    "main.js.map": "/static/js/main.f3809c21.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.a09e246f.chunk.js": "/static/js/2.a09e246f.chunk.js",
-    "static/js/2.a09e246f.chunk.js.map": "/static/js/2.a09e246f.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.0b3b526864c08633bd472cb081163170.js": "/precache-manifest.0b3b526864c08633bd472cb081163170.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.19b02eb3.chunk.css.map": "/static/css/main.19b02eb3.chunk.css.map",
->>>>>>> 85cbfe1f13e5d1d82c732ad05d4e8ddb6fb395c3
     "static/media/BrandonDavid_HERE-Safely.pdf": "/static/media/BrandonDavid_HERE-Safely.160cba00.pdf",
     "static/media/BrandonDavid_Resume.pdf": "/static/media/BrandonDavid_Resume.7033a854.pdf",
     "static/media/akp-cover.jpg": "/static/media/akp-cover.aa585660.jpg",
