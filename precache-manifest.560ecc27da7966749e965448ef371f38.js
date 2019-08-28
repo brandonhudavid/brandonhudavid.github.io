@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5943b63ca3be21b7da40ebb864bc2b35",
+    "revision": "cc4f891a22c20a08d50cf5e835e2705b",
     "url": "/index.html"
   },
   {
-    "revision": "125e54e44e9712874d55",
+    "revision": "e0911e2bf48754f1434b",
     "url": "/static/css/main.d7ee0dd5.chunk.css"
   },
   {
-    "revision": "603b2c316020d396fb6b",
-    "url": "/static/js/2.33452458.chunk.js"
+    "revision": "138828cccc9cfb403cef",
+    "url": "/static/js/2.5fc3c22a.chunk.js"
   },
   {
-    "revision": "125e54e44e9712874d55",
-    "url": "/static/js/main.643e161a.chunk.js"
+    "revision": "e0911e2bf48754f1434b",
+    "url": "/static/js/main.78dd85b4.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/BrandonDavid_HERE-Safely.160cba00.pdf"
   },
   {
-    "revision": "7033a8541911111c5ac33896e3f7a9d9",
-    "url": "/static/media/BrandonDavid_Resume.7033a854.pdf"
+    "revision": "11c3f7558b3c468cc310c8b4c34a7764",
+    "url": "/static/media/BrandonDavid_Resume.11c3f755.pdf"
   },
   {
     "revision": "aa585660ee22811b02993d9ef2ce273d",
@@ -318,6 +318,26 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0c47e390c21d6c795c241d8f039fd793",
     "url": "/static/media/logo.0c47e390.png"
+  },
+  {
+    "revision": "b089704d9f2168c2ad4fc2238cc28d9b",
+    "url": "/static/media/okr1.b089704d.png"
+  },
+  {
+    "revision": "58ebdb532d7ce218f92a91350a418c3c",
+    "url": "/static/media/okr2.58ebdb53.png"
+  },
+  {
+    "revision": "be2e9f28b501865d3d6355445f89f263",
+    "url": "/static/media/opti1.be2e9f28.jpg"
+  },
+  {
+    "revision": "404d732eb53b839e319ccfb662c2717b",
+    "url": "/static/media/opti2.404d732e.jpg"
+  },
+  {
+    "revision": "92a0227153eede04dfab31679c4b3e80",
+    "url": "/static/media/optimizely.92a02271.png"
   },
   {
     "revision": "676faf1a11a69fc7d0d4622ff841ded5",
